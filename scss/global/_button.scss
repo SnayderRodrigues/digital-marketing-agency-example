@@ -1,0 +1,50 @@
+@use '../util/' as u;
+
+.button {
+    padding: 12px 22px 12px;
+    // display: inline-block;
+    color: var(--black);
+    font-weight: 600;
+    background-color: var(--green);
+    // border: 2px solid var(--green);
+    // border-radius: 999px;
+    transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1);
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    z-index: 1;
+    
+    @include u.breakpoint-up(large) {
+      padding: 16px 30px 16px;
+    }
+    
+    &:hover {
+      cursor: pointer;
+        // border: 2px solid var(--black);
+        color: var(--yellow);
+        // background-color: var(--black);
+    }
+
+  
+  &::after{
+    background-color: var(--black);
+    // border-radius: 50%;
+    content: '';
+    display: block;
+    height: 105%;
+    width: 110%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-110%, 0);
+    border: none;
+    // transform-origin: top left;
+    transition: transform 500ms cubic-bezier(0.23, 1, 0.32, 1);
+    will-change: transform;
+    z-index: -1;
+  }  
+    
+  &:hover::after {
+    transform: translate(0, 0);
+  }
+}
