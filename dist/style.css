@@ -204,6 +204,11 @@ h3 {
   align-items: center;
   gap: 24px;
 }
+@media (min-width: 48em) {
+  .header__navbar {
+    gap: 0;
+  }
+}
 .header__list-div {
   display: flex;
   align-items: center;
@@ -263,7 +268,7 @@ h3 {
   height: 30px;
   background: none;
   border: none;
-  padding: none;
+  padding: 0;
   cursor: pointer;
 }
 @media (max-width: 47.99875em) {
@@ -300,7 +305,7 @@ h3 {
 .header__menu.open-menu > .header__menu-button-2 {
   background-color: var(--yellow);
   transform: rotate(45deg) translate(-50%, -50%);
-  top: 83%;
+  top: 82%;
   left: 36%;
 }
 .header .link-hidden {
