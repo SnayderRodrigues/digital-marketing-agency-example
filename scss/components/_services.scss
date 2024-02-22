@@ -17,7 +17,7 @@
         margin-bottom: 100px;
 
         @include u.breakpoint-down(xsmall) {
-            margin-bottom: 80px;
+            margin-bottom: 40px;
         }
     }
     &__h2 {

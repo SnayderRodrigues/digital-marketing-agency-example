@@ -32,6 +32,9 @@
             flex-direction: column;
 
         }
+        @include u.breakpoint-down(xsmall) {
+            margin-bottom: 0;
+        }
         @include u.breakpoint-down(midlarge) {
             flex-direction: column;
 

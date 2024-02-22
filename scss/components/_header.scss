@@ -132,6 +132,13 @@
         top: 83%;
         left: 36%;
     }
+    .link-hidden {
+        display: none;
+
+        @include u.breakpoint-down(xsmall) {
+            display: block;
+        }
+    }
 }
 
 // .active {

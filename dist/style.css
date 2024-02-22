@@ -303,6 +303,14 @@ h3 {
   top: 83%;
   left: 36%;
 }
+.header .link-hidden {
+  display: none;
+}
+@media (max-width: 26.62375em) {
+  .header .link-hidden {
+    display: block;
+  }
+}
 
 .hero {
   display: flex;
@@ -562,7 +570,7 @@ h3 {
 }
 @media (max-width: 26.62375em) {
   .services__wrapper {
-    margin-bottom: 80px;
+    margin-bottom: 40px;
   }
 }
 .services__h2 {
@@ -912,6 +920,11 @@ h3 {
 @media (max-width: 47.99875em) {
   .faq__content {
     flex-direction: column;
+  }
+}
+@media (max-width: 26.62375em) {
+  .faq__content {
+    margin-bottom: 0;
   }
 }
 @media (max-width: 69.99875em) {
