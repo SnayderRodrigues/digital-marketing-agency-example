@@ -29,22 +29,29 @@
             gap: 80px;
             flex-direction: column;
 
-            // .about__image-wrapper {
-            //     width: 100%;
-            //     position: relative;
-            //     top: 0;
-            // }
-            .about__description, .about__description-right {
+            .about__description {
                 width: 100%;
                 position: relative;
                 top: 0;
             }
-            .about__description-right {
-                width: 100%;
-                position: relative;
-                top: 0;
-                text-align: start;
-            }
+        }
+    }
+    &__description-5050 {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        width: 100%;
+
+        @include u.breakpoint-down(midlarge) {
+            flex-direction: column;
+            gap: 3rem;
+        }
+
+        .highlight {
+            color: var(--black);
+        }
+        .margin-bottom {
+            margin-bottom: 2rem;
         }
     }
     &__description {
@@ -52,8 +59,6 @@
         flex-direction: column;
         gap: 1rem;
         width: 100%;
-        position: relative;
-        z-index: 2;
 
         @include u.breakpoint-down(small) {
             width: 100%;
@@ -63,46 +68,31 @@
             color: var(--black);
         }
     }
-    // &__description-right {
-    //     display: flex;
-    //     flex-direction: column;
-    //     align-self: flex-end;
-    //     gap: 1rem;
-    //     width: 47%;
-    //     position: relative;
-    //     z-index: 2;
-    //     text-align: end;
-    //     margin-top: -100px;
+    &__description-5050-wrapper {
+        width: 50%;
 
-    //     h2 {
-    //         margin-bottom: 1rem;
-    //     }
+        @include u.breakpoint-down(midlarge) {
+            width: 100%;
+        }
+    }
+    &__image-wrapper {
+        width: 50%;
 
-    //     @include u.breakpoint-down(small) {
-    //         width: 100%;
-    //     }
-    // }
-    // &__image-wrapper {
-    //     width: 50%;
-    //     margin-top: 60px;
-
-    //     @include u.breakpoint-down(small) {
-    //         width: 100%;
-    //     }
-    //     @include u.breakpoint-down(midlarge) {
-    //         margin-top: 0;
-    //     }
-    // }
+        @include u.breakpoint-down(midlarge) {
+            width: 100%;
+            max-height: 700px;
+        }
+    }
     &__image {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: 0.05;
-        z-index: 1;
+        border: 4px solid var(--black);
 
+        @include u.breakpoint-down(midlarge) {
+            width: 100%;
+            max-height: 700px;
+        }
         // @include u.breakpoint-down(midlarge) {
         //     height: 600px;
         // }
