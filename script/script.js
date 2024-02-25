@@ -25,6 +25,21 @@ window.addEventListener('resize', function() {
 });
 
 
+document.addEventListener('DOMContentLoaded', function () {
+    var menu = document.querySelector('.header');
+    var origOffsetY = document.querySelector('.hero').offsetHeight - 200;
+  
+    function scroll() {
+        if (window.scrollY >= origOffsetY) {
+            menu.classList.add('opaque');
+        } else {
+            menu.classList.remove('opaque');
+        }
+    }
+  
+    document.addEventListener('scroll', scroll);
+  });
+
 // let sections = document.querySelectorAll('section');
 // let navLinks = document.querySelectorAll('header div nav div ul li a');
 
