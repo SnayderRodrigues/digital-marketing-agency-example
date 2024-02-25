@@ -444,6 +444,13 @@ h3 {
   align-items: center;
   justify-content: center;
   padding: 20px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 200ms linear;
+}
+.back-to-top.opaque {
+  opacity: 1;
+  pointer-events: all;
 }
 .back-to-top__button {
   background-color: var(--white);

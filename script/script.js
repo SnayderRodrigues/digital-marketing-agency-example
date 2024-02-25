@@ -27,13 +27,16 @@ window.addEventListener('resize', function() {
 
 document.addEventListener('DOMContentLoaded', function () {
     var menu = document.querySelector('.header');
+    var top = document.querySelector('.back-to-top');
     var origOffsetY = document.querySelector('.hero').offsetHeight - 200;
   
     function scroll() {
         if (window.scrollY >= origOffsetY) {
             menu.classList.add('opaque');
+            top.classList.add('opaque');
         } else {
             menu.classList.remove('opaque');
+            top.classList.remove('opaque');
         }
     }
   
