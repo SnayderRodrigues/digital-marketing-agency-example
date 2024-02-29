@@ -6,7 +6,7 @@
 body {
   margin: 0;
   font-family: "Manrope", Arial, Helvetica, sans-serif;
-  font-size: clamp(1rem, 0.9353448276rem + 0.275862069vw, 1.125rem);
+  font-size: clamp(1.125rem, 0.9353448276rem + 0.275862069vw, 1.25rem);
   line-height: 1.78;
   overflow-x: hidden;
   color: var(--black);
@@ -179,7 +179,7 @@ h3 {
 }
 
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 1000;
   width: 100%;
@@ -325,7 +325,7 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: calc(100vh - 88.08px);
+  height: 100vh;
   background-color: var(--yellow);
   text-align: center;
   padding: 120px 0;
@@ -350,7 +350,7 @@ h3 {
 }
 .hero__headline-description {
   font-size: clamp(1.125rem, 1.0224358974rem + 0.5128205128vw, 1.375rem);
-  font-weight: 600;
+  font-weight: 400;
   margin-inline: auto;
 }
 .hero__button-wrapper {
@@ -497,7 +497,7 @@ h3 {
 .about {
   padding: 240px 0 120px 0;
   background-color: var(--yellow);
-  color: #999475;
+  color: #79756e;
   position: relative;
   margin-top: -120px;
 }

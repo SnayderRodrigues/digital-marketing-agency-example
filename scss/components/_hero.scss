@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: calc(100vh - 88.08px);
+    height: 100vh;
     background-color: var(--yellow);
     // border-bottom: 4px solid var(--black);
     text-align: center;
@@ -32,7 +32,7 @@
     &__headline-description {
         // color: var(--color-white);
         font-size: clamp(u.rem(18), 1.0224358974358974rem + 0.5128205128205128vw, u.rem(22));
-        font-weight: 600;
+        font-weight: 400;
         margin-inline: auto;
     }
     &__button-wrapper {
