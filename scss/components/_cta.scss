@@ -19,11 +19,13 @@
             grid-template-columns: auto u.rem(106) auto;
             justify-items: start;
         }
-        
         @include u.breakpoint-up(large) {
             grid-template-rows: u.rem(173) auto;
             grid-template-columns: auto u.rem(95) auto;
             padding-bottom: 120px;
+        }
+        @include u.breakpoint-down(small) {
+            padding-bottom: 80px;
         }
     }
     &__image {

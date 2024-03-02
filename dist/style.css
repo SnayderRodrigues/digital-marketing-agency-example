@@ -160,7 +160,7 @@ h3 {
   color: var(--white);
 }
 .button::after {
-  background-color: var(--bg);
+  background-color: var(--black);
   content: "";
   display: block;
   height: 105%;
@@ -861,6 +861,11 @@ h3 {
     grid-template-rows: 10.8125rem auto;
     grid-template-columns: auto 5.9375rem auto;
     padding-bottom: 120px;
+  }
+}
+@media (max-width: 47.99875em) {
+  .call-to-action__wrapper {
+    padding-bottom: 80px;
   }
 }
 .call-to-action__image {
