@@ -21,13 +21,13 @@
     &:hover {
       cursor: pointer;
         // border: 2px solid var(--black);
-        color: var(--yellow);
+        color: var(--white);
         // background-color: var(--black);
     }
 
   
   &::after{
-    background-color: var(--black);
+    background-color: var(--bg);
     // border-radius: 50%;
     content: '';
     display: block;

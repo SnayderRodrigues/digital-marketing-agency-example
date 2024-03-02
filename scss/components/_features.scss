@@ -1,10 +1,8 @@
 @use '../util/' as u;
 
 .features {
-    background-color: var(--yellow);
+    background-color: var(--white);
     color: var(--black);
-    border-top: 4px solid var(--black);
-    border-bottom: 4px solid var(--black);
     padding-top: clamp(4rem, 3.1594827586206895rem + 3.5862068965517238vw, 5.625rem);
     padding-bottom: clamp(4rem, 3.1594827586206895rem + 3.5862068965517238vw, 5.625rem);
     
@@ -54,7 +52,7 @@
         font-weight: 600;
         line-height: 1.1;
         font-size: clamp(u.rem(24), 1.1206896551724137rem + 0.5517241379310345vw, u.rem(56));
-        background-color: var(--white);
+        background-color: var(--black);
         border-radius: 50%;
         margin-bottom: u.rem(8);
         // padding: 9px 18px;

@@ -3,6 +3,7 @@
 .faq {
     padding: 120px 0;
     background-color: var(--white);
+    color: var(--black);
 
     @include u.breakpoint-down(xsmall) {
         padding: 80px 0;
@@ -45,7 +46,7 @@
         flex-direction: column;
         // gap: 1rem;
         width: 50%;
-        background-color: var(--white);
+        background-color: transparent;
 
         @include u.breakpoint-down(midlarge) {
             width: 100%;
@@ -58,14 +59,14 @@
     }
     &__p {
         a {
-            color: #0f9177;
+            color: var(--green);
         }
         margin-bottom: 2rem;
     }
     &__link-email {
         transition: color 200ms linear;
         &:hover {
-            color: var(--green);
+            color: var(--black);
         }
     }
     &__form-items {
@@ -89,11 +90,12 @@
         font-size: u.rem(18);
         // line-height: 1;
         border: 0;
-        border-bottom: 1px solid rgba(0,0,0,.5);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
         transition: border 200ms linear;
     }
     .message {
         resize: vertical;
+        background-color: transparent;
     }
     &__button-wrapper {
         display: flex;
@@ -121,7 +123,7 @@
         };
     }
     &__question-div {
-        background-color: var(--yellow);
+        background-color: var(--white);
         list-style: none;
         width: 100%;
         margin-top: -4px;
@@ -170,7 +172,7 @@
         margin-left: 12px;
     }
     &__answer {
-        background-color: var(--yellow);
+        background-color: var(--white);
         padding: 0 10px;
         line-height: 26px;
         max-height: 0;

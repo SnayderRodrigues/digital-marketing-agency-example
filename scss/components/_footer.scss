@@ -1,7 +1,7 @@
 @use '../util/' as u;
 
 .footer {
-    background-color: var(--yellow);
+    background-color: var(--bg);
     // border-top: 4px solid var(--black);
     // padding-bottom: 64px;
 
@@ -34,7 +34,7 @@
         }
     }
     &__logo {
-        // color: var(--black);
+        color: var(--white);
         font-family: 'Fraunces', Georgia, 'Times New Roman', Times, serif;
         font-size: u.rem(36);
         font-weight: bold;
@@ -50,7 +50,7 @@
     }
     &__link {
         path {
-            fill: var(--black);
+            fill: var(--white);
         }
         &:hover {
             path {
@@ -92,6 +92,7 @@
             font-size: 1.5rem;
         }
         a {
+            color: var(--white);
             transition: color 200ms linear;
         }
         a:hover {

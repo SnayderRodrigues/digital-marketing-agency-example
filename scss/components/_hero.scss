@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: var(--yellow);
+    background-color: var(--bg);
     // border-bottom: 4px solid var(--black);
     text-align: center;
     padding: 120px 0;
@@ -61,12 +61,12 @@
             width: 100%!important;
         }
 
-        &:hover {
-            .hero__scroll-down-icon {
-                border-right: 2px solid var(--yellow);
-                border-bottom: 2px solid var(--yellow);
-            }
-        }
+        // &:hover {
+        //     .hero__scroll-down-icon {
+        //         border-right: 2px solid var(--yellow);
+        //         border-bottom: 2px solid var(--yellow);
+        //     }
+        // }
     }
     &__button {
         display: flex;
@@ -74,6 +74,7 @@
         justify-content: center;
         gap: 2rem;
         background-color: transparent;
+        color: var(--white);
         // border: 4px solid var(--black);
         // padding: 12px 22px 12px;
 
@@ -106,8 +107,8 @@
         width: 12px;
         height: 12px;
         background-color: transparent;
-        border-right: 2px solid var(--black);
-        border-bottom: 2px solid var(--black);
+        border-right: 2px solid var(--white);
+        border-bottom: 2px solid var(--white);
         margin-bottom: 4px;
         transform: rotate(45deg);
         transition: all 200ms linear;
@@ -147,6 +148,7 @@
     &__button {
         background-color: var(--white);
         border: 2px solid var(--black);
+        color: var(--bg);
         font-size: 14px;
         letter-spacing: 1.5px;
         width: 100%;
@@ -173,7 +175,7 @@
         }
 
         &:hover {
-            color: var(--black);
+            color: var(--bg);
         }
     }
     &__scroll-up-icon {
