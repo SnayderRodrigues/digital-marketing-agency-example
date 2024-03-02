@@ -11,8 +11,14 @@
     padding-block: 32px 12px;
     transition: all 200ms linear;
     
+    @include u.breakpoint-down(small) {
+        padding-block: 12px 12px;
+    }
     &.opaque {
         padding-block: 12px 12px;
+        background-color: rgba(18, 18, 18, 0.7);
+    }
+    &.opaque:hover {
         background-color: var(--bg);
     }
 
