@@ -5,6 +5,7 @@
     background-color: var(--bg);
     color: var(--white);
     position: relative;
+    z-index: 1;
     margin-top: -120px;
 
     @include u.breakpoint-down(small) {

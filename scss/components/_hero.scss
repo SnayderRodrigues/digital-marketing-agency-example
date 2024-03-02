@@ -11,7 +11,6 @@
     padding: 120px 0;
     position: relative;
     z-index: 2;
-    overflow: hidden;
 
     &__wrapper {
         display: flex;
@@ -112,6 +111,41 @@
         margin-bottom: 4px;
         transform: rotate(45deg);
         transition: all 200ms linear;
+    }
+    .design-element-1 {
+        position: absolute;
+        left: calc(0% - 500px);
+        top: calc(100% - 600px);
+        z-index: -1;
+        img {
+            width: 1000px;
+            height: 1000px;
+            filter: blur(100px);
+            animation: filter 5000ms infinite linear;
+        }
+    }
+    .design-element-2 {
+        position: absolute;
+        right: calc(0% - 500px);
+        top: calc(0% - 100px);
+        z-index: -1;
+        img {
+            width: 1000px;
+            height: 1000px;
+            filter: blur(100px);
+            animation: filter 5000ms infinite linear;
+        }
+    }
+    @keyframes filter {
+        0% {
+            filter: blur(100px);
+        }
+        50% {
+            filter: blur(0px);
+        }
+        100% {
+            filter: blur(100px);
+        }
     }
 }
 
