@@ -10,12 +10,13 @@
     text-align: center;
     padding: 120px 0;
     position: relative;
-    z-index: 2;
 
     &__wrapper {
         display: flex;
         flex-direction: column;
         align-items: center;
+        position: relative;
+        z-index: 2;
     }
     &__headline-wrapper {
         position: relative;
@@ -116,7 +117,7 @@
         position: absolute;
         left: calc(0% - 500px);
         top: calc(100% - 600px);
-        z-index: -1;
+        z-index: 1;
         img {
             width: 1000px;
             height: 1000px;
@@ -128,7 +129,7 @@
         position: absolute;
         right: calc(0% - 500px);
         top: calc(0% - 100px);
-        z-index: -1;
+        z-index: 1;
         img {
             width: 1000px;
             height: 1000px;
