@@ -26,9 +26,9 @@ const body = document.body;
 menuButton.addEventListener('click', function() {
 
     if (menu.classList.contains('open-menu')) {
-        body.style.overflow = 'hidden';
+        body.style.overflowY = 'hidden';
     } else {
-        body.style.overflow = '';
+        body.style.overflowY = '';
     }
 });
 
