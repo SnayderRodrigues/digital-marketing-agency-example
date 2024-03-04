@@ -18,6 +18,31 @@ items.classList.remove('open-menu');
 menu.classList.remove('open-menu');
 }
 
+
+const menuButton = document.querySelector('.header__menu');
+const menuBody = document.querySelector('.header__list-div');
+const body = document.body;
+
+menuButton.addEventListener('click', function() {
+
+    if (menu.classList.contains('open-menu')) {
+        body.style.overflow = 'hidden';
+    } else {
+        body.style.overflow = '';
+    }
+});
+
+menuBody.addEventListener('click', function() {
+
+    if (menu.classList.contains('open-menu')) {
+        body.style.overflow = 'hidden';
+    } else {
+        body.style.overflow = '';
+    }
+});
+
+
+
 window.addEventListener('resize', function() {
     if (window.innerWidth < 768) {
       items.style.transition = 'none';
