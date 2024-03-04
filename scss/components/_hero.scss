@@ -79,13 +79,13 @@
         border: 1px solid var(--black);
         // padding: 12px 22px 12px;
 
-        
+        @include u.breakpoint-down(small) {
+            background-color: var(--black);
+            border: none;
+        }
         @media (width < 500px) {
             width: 100%!important;
         }
-        // @include u.breakpoint-down(medium) {
-        //     padding: 8px 18px 8px;
-        // }
 
         &::after{
             background-color: var(--black);

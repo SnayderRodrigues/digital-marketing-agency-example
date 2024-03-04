@@ -106,22 +106,6 @@ textarea:focus-visible {
   font-weight: 400;
   src: url("/assets/fonts/bebas-neue-v14-latin-regular.woff2") format("woff2");
 }
-/* fraunces-regular - latin */
-@font-face {
-  font-display: swap;
-  font-family: "Fraunces";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../../assets/fonts/fraunces-v31-latin-regular.woff2") format("woff2");
-}
-/* fraunces-600 - latin */
-@font-face {
-  font-display: swap;
-  font-family: "Fraunces";
-  font-style: normal;
-  font-weight: 600;
-  src: url("../../assets/fonts/fraunces-v31-latin-600.woff2") format("woff2");
-}
 /* manrope-regular - latin */
 @font-face {
   font-display: swap;
@@ -411,6 +395,12 @@ h3 {
   background-color: transparent;
   color: var(--white);
   border: 1px solid var(--black);
+}
+@media (max-width: 47.99875em) {
+  .hero__button {
+    background-color: var(--black);
+    border: none;
+  }
 }
 @media (width < 500px) {
   .hero__button {
