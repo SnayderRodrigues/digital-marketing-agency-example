@@ -115,7 +115,7 @@ textarea:focus-visible {
   src: url("../../assets/fonts/manrope-v15-latin-regular.woff2") format("woff2");
 }
 h1, h2, h3 {
-  font-family: "Bebas Neue", Georgia, "Times New Roman", Times, serif;
+  font-family: "Bebas Neue";
   font-weight: 600;
   line-height: 1.1;
   letter-spacing: 2px;
@@ -441,7 +441,6 @@ h3 {
   width: 1000px;
   height: 1000px;
   filter: blur(100px);
-  animation: filter 5000ms infinite linear;
 }
 .hero .design-element-2 {
   position: absolute;
@@ -453,18 +452,6 @@ h3 {
   width: 1000px;
   height: 1000px;
   filter: blur(100px);
-  animation: filter 5000ms infinite linear;
-}
-@keyframes filter {
-  0% {
-    filter: blur(100px);
-  }
-  50% {
-    filter: blur(0px);
-  }
-  100% {
-    filter: blur(100px);
-  }
 }
 
 .back-to-top-wrapper {
@@ -793,7 +780,6 @@ h3 {
   align-self: center;
   width: 3rem;
   height: 3rem;
-  font-family: "Fraunces", Georgia, "Times New Roman", Times, serif;
   font-weight: 600;
   line-height: 1.1;
   font-size: clamp(1.5rem, 1.1206896552rem + 0.5517241379vw, 3.5rem);
