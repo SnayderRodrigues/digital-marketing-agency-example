@@ -48,8 +48,8 @@
         min-height: 100%;
         padding: 36px;
         background-color: var(--white);
-        color: var(--black);
-        border: 4px solid var(--black);
+        color: var(--bg-secondary);
+        border: 4px solid var(--bg-secondary);
 
         @include u.breakpoint-down(small) {
             width: 100%;

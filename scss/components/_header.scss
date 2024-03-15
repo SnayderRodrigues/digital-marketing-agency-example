@@ -7,7 +7,7 @@
     width: 100%;
     background-color: transparent;
     color: var(--white);
-    // border-bottom: 4px solid var(--black);
+    // border-bottom: 4px solid var(--bg-secondary);
     padding-block: 32px 12px;
     transition: all 200ms linear;
     
@@ -68,7 +68,7 @@
             z-index: 999;
             // height: 100%;
             padding: 2rem;
-            background-color: var(--black);
+            background-color: var(--bg-secondary);
             translate: 0 -100%;
             transition: translate 500ms;
         }

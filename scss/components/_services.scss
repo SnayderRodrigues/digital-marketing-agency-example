@@ -1,7 +1,7 @@
 @use '../util/' as u;
 
 .services {
-    background-color: var(--black);
+    background-color: var(--bg-secondary);
     width: 100%;
     padding: 120px 0;
 
@@ -85,14 +85,14 @@
             background-color: var(--white);
             transform: translateX(0);
             border: 4px solid var(--bg);
-            color: var(--black);
+            color: var(--bg-secondary);
         }
 
         &:hover {
             background-color: var(--white);
             transform: translateX(0);
             border: 4px solid var(--bg);
-            color: var(--black);
+            color: var(--bg-secondary);
         }
 
         h3 {

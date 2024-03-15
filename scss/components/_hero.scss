@@ -6,7 +6,7 @@
     justify-content: center;
     height: 100vh;
     background-color: var(--bg);
-    // border-bottom: 4px solid var(--black);
+    // border-bottom: 4px solid var(--bg-secondary);
     text-align: center;
     padding: 120px 0;
     position: relative;
@@ -76,11 +76,11 @@
         gap: 2rem;
         background-color: transparent;
         color: var(--white);
-        border: 1px solid var(--black);
+        border: 1px solid var(--bg-secondary);
         // padding: 12px 22px 12px;
 
         @include u.breakpoint-down(small) {
-            background-color: var(--black);
+            background-color: var(--bg-secondary);
             border: none;
         }
         @media (width < 500px) {
@@ -88,7 +88,7 @@
         }
 
         &::after{
-            background-color: var(--black);
+            background-color: var(--bg-secondary);
             // border-radius: 50%;
             content: '';
             display: block;
@@ -170,7 +170,7 @@
 
     &__button {
         background-color: var(--white);
-        border: 2px solid var(--black);
+        border: 2px solid var(--bg-secondary);
         color: var(--bg);
         font-size: 14px;
         letter-spacing: 1.5px;
@@ -205,8 +205,8 @@
         width: 12px;
         height: 12px;
         background-color: transparent;
-        border-top: 2px solid var(--black);
-        border-left: 2px solid var(--black);
+        border-top: 2px solid var(--bg-secondary);
+        border-left: 2px solid var(--bg-secondary);
         margin-left: 12px;
         margin-top: 4px;
         transform: rotate(45deg);

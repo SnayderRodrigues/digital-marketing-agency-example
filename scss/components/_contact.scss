@@ -1,7 +1,7 @@
 @use '../util/' as u;
 
 .contact {
-    background-color: var(--black);
+    background-color: var(--bg-secondary);
     padding: 120px 0;
 
     @include u.breakpoint-down(xsmall) {
@@ -22,7 +22,7 @@
     }
     &__description {
         width: 65%;
-        background-color: var(--black);
+        background-color: var(--bg-secondary);
         color: var(--white);
         padding: 60px;
         
@@ -62,7 +62,7 @@
         // gap: 1rem;
         width: 35%;
         background-color: var(--white);
-        color: var(--black);
+        color: var(--bg-secondary);
         padding: 60px;
         box-shadow: 6px 6px 10px -1px rgba(0,0,0, .15);
 

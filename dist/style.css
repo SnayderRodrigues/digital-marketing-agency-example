@@ -94,8 +94,8 @@ textarea:focus-visible {
   --yellow: #fff7e5;
   --green: #88d42c;
   --white: #ffffff;
-  --black: #2b2b2b;
-  --bg: #121212;
+  --bg: #000000;
+  --bg-secondary: #293023;
 }
 
 /* bebas neue-regular - latin */
@@ -138,7 +138,7 @@ h3 {
 
 .button {
   padding: 12px 22px 12px;
-  color: var(--black);
+  color: var(--bg-secondary);
   font-weight: 600;
   background-color: var(--green);
   transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1);
@@ -157,7 +157,7 @@ h3 {
   color: var(--white);
 }
 .button::after {
-  background-color: var(--black);
+  background-color: var(--bg-secondary);
   content: "";
   display: block;
   height: 105%;
@@ -239,7 +239,7 @@ h3 {
     height: 100%;
     z-index: 999;
     padding: 2rem;
-    background-color: var(--black);
+    background-color: var(--bg-secondary);
     translate: 0 -100%;
     transition: translate 500ms;
   }
@@ -394,11 +394,11 @@ h3 {
   gap: 2rem;
   background-color: transparent;
   color: var(--white);
-  border: 1px solid var(--black);
+  border: 1px solid var(--bg-secondary);
 }
 @media (max-width: 47.99875em) {
   .hero__button {
-    background-color: var(--black);
+    background-color: var(--bg-secondary);
     border: none;
   }
 }
@@ -408,7 +408,7 @@ h3 {
   }
 }
 .hero__button::after {
-  background-color: var(--black);
+  background-color: var(--bg-secondary);
   content: "";
   display: block;
   height: 105%;
@@ -486,7 +486,7 @@ h3 {
 }
 .back-to-top__button {
   background-color: var(--white);
-  border: 2px solid var(--black);
+  border: 2px solid var(--bg-secondary);
   color: var(--bg);
   font-size: 14px;
   letter-spacing: 1.5px;
@@ -519,8 +519,8 @@ h3 {
   width: 12px;
   height: 12px;
   background-color: transparent;
-  border-top: 2px solid var(--black);
-  border-left: 2px solid var(--black);
+  border-top: 2px solid var(--bg-secondary);
+  border-left: 2px solid var(--bg-secondary);
   margin-left: 12px;
   margin-top: 4px;
   transform: rotate(45deg);
@@ -623,7 +623,7 @@ h3 {
   max-height: 600px;
   -o-object-fit: cover;
      object-fit: cover;
-  border: 4px solid var(--black);
+  border: 4px solid var(--bg-secondary);
 }
 @media (max-width: 69.99875em) {
   .about__image {
@@ -633,7 +633,7 @@ h3 {
 }
 
 .services {
-  background-color: var(--black);
+  background-color: var(--bg-secondary);
   width: 100%;
   padding: 120px 0;
 }
@@ -718,14 +718,14 @@ h3 {
     background-color: var(--white);
     transform: translateX(0);
     border: 4px solid var(--bg);
-    color: var(--black);
+    color: var(--bg-secondary);
   }
 }
 .services .card-element:hover {
   background-color: var(--white);
   transform: translateX(0);
   border: 4px solid var(--bg);
-  color: var(--black);
+  color: var(--bg-secondary);
 }
 .services .card-element h3 {
   margin-bottom: 20px;
@@ -733,7 +733,7 @@ h3 {
 
 .features {
   background-color: var(--white);
-  color: var(--black);
+  color: var(--bg-secondary);
   padding-top: clamp(4rem, 3.1594827586rem + 3.5862068966vw, 5.625rem);
   padding-bottom: clamp(4rem, 3.1594827586rem + 3.5862068966vw, 5.625rem);
 }
@@ -783,7 +783,7 @@ h3 {
   font-weight: 600;
   line-height: 1.1;
   font-size: clamp(1.5rem, 1.1206896552rem + 0.5517241379vw, 3.5rem);
-  background-color: var(--black);
+  background-color: var(--bg-secondary);
   border-radius: 50%;
   margin-bottom: 0.5rem;
 }
@@ -846,8 +846,8 @@ h3 {
   min-height: 100%;
   padding: 36px;
   background-color: var(--white);
-  color: var(--black);
-  border: 4px solid var(--black);
+  color: var(--bg-secondary);
+  border: 4px solid var(--bg-secondary);
 }
 @media (max-width: 47.99875em) {
   .reviews__card {
@@ -910,7 +910,7 @@ h3 {
   grid-column: 1/2;
   border-radius: 50%;
   width: 17.5625rem;
-  border: 4px solid var(--black);
+  border: 4px solid var(--bg-secondary);
 }
 @media (min-width: 48em) {
   .call-to-action__image {
@@ -930,10 +930,10 @@ h3 {
   flex-direction: column;
   align-items: center;
   background-color: var(--white);
-  color: var(--black);
+  color: var(--bg-secondary);
   padding: 32px;
-  border: 4px solid var(--black);
-  box-shadow: 8px 8px 0 var(--black);
+  border: 4px solid var(--bg-secondary);
+  box-shadow: 8px 8px 0 var(--bg-secondary);
 }
 @media (max-width: 47.99875em) {
   .call-to-action__content {
@@ -975,7 +975,7 @@ h3 {
 .faq {
   padding: 120px 0;
   background-color: var(--white);
-  color: var(--black);
+  color: var(--bg-secondary);
 }
 @media (max-width: 26.62375em) {
   .faq {
@@ -1045,7 +1045,7 @@ h3 {
   transition: color 200ms linear;
 }
 .faq__link-email:hover {
-  color: var(--black);
+  color: var(--bg-secondary);
 }
 .faq__form-items {
   display: flex;
@@ -1086,7 +1086,7 @@ h3 {
   display: flex;
   flex-direction: column;
   width: 50%;
-  color: var(--black);
+  color: var(--bg-secondary);
 }
 @media (max-width: 47.99875em) {
   .faq__accordion {
@@ -1105,17 +1105,12 @@ h3 {
   width: 100%;
   margin-top: -4px;
   padding: 18px;
-  border: 4px solid var(--black);
+  border: 4px solid var(--bg-secondary);
   transition: padding 300ms cubic-bezier(0.23, 1, 0.32, 1), background-color 300ms linear;
 }
 @media (max-width: 47.99875em) {
   .faq__question-div {
     padding: 16px;
-  }
-}
-@media (min-width: 48em) {
-  .faq__question-div:hover > .faq__question {
-    padding-left: 22px;
   }
 }
 .faq__question {
@@ -1142,8 +1137,8 @@ h3 {
   width: 12px;
   height: 12px;
   background-color: transparent;
-  border-right: 2px solid var(--black);
-  border-bottom: 2px solid var(--black);
+  border-right: 2px solid var(--bg-secondary);
+  border-bottom: 2px solid var(--bg-secondary);
   transform: rotate(45deg);
   transition: all 200ms linear;
   flex-shrink: 0;
@@ -1184,7 +1179,7 @@ h3 {
 }
 
 .contact {
-  background-color: var(--black);
+  background-color: var(--bg-secondary);
   padding: 120px 0;
 }
 @media (max-width: 26.62375em) {
@@ -1209,7 +1204,7 @@ h3 {
 }
 .contact__description {
   width: 65%;
-  background-color: var(--black);
+  background-color: var(--bg-secondary);
   color: var(--white);
   padding: 60px;
   display: flex;
@@ -1248,7 +1243,7 @@ h3 {
   justify-content: center;
   width: 35%;
   background-color: var(--white);
-  color: var(--black);
+  color: var(--bg-secondary);
   padding: 60px;
   box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15);
 }
