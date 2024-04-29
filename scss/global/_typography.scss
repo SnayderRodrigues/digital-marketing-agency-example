@@ -2,19 +2,11 @@
 
 h1, h2, h3 {
     font-family: 'Bebas Neue';
-    font-weight: 600;
     line-height: 1.1;
     letter-spacing: 2px;
 
     span {
-        // display: inline-block;
         color: var(--green);
-        // &::after {
-        //     content: '';
-        //     height: 2px;
-        //     display: block;
-        //     background-color: var(--green);
-        // }
     }
 }
 
