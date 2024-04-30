@@ -1,11 +1,11 @@
 @use '../util/' as u;
 
 .features {
-    background-color: var(--white);
-    color: var(--bg-secondary);
-    padding-top: clamp(4rem, 3.1594827586206895rem + 3.5862068965517238vw, 5.625rem);
-    padding-bottom: clamp(4rem, 3.1594827586206895rem + 3.5862068965517238vw, 5.625rem);
-    
+    color: var(--white);
+    background-color: var(--bg);
+    // padding-top: clamp(4rem, 3.1594827586206895rem + 3.5862068965517238vw, 5.625rem);
+    // padding-bottom: clamp(4rem, 3.1594827586206895rem + 3.5862068965517238vw, 5.625rem);
+    padding: 120px 0;
 
     &__h2-wrapper {
         display: flex;
