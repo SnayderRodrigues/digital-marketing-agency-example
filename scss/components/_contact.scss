@@ -5,6 +5,8 @@
     padding: 120px 0;
     border-radius: 2rem;
     margin-top: -120px;
+    position: relative;
+    z-index: 3;
     
     @include u.breakpoint-down(xsmall) {
         padding: 80px 0;

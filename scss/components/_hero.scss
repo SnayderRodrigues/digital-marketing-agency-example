@@ -100,26 +100,18 @@
       z-index: -1;
     }
   }
-  .design-element-1 {
+  .hero-design-element-1 {
+    width: 600px;
+    height: 600px;
     position: absolute;
-    left: calc(0% - 500px);
-    top: calc(100% - 600px);
-    z-index: 1;
-    img {
-      width: 1000px;
-      height: 1000px;
-      filter: blur(100px);
-    }
+    top: calc(100% - 500px);
+    left: calc(0% - 300px);
   }
-  .design-element-2 {
+  .hero-design-element-2 {
+    width: 600px;
+    height: 600px;
     position: absolute;
-    right: calc(0% - 500px);
     top: calc(0% - 100px);
-    z-index: 1;
-    img {
-      width: 1000px;
-      height: 1000px;
-      filter: blur(100px);
-    }
+    left: calc(100% - 300px);
   }
 }

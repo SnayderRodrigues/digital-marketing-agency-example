@@ -1,80 +1,91 @@
-@use '../util/' as u;
+@use "../util/" as u;
 
 .reviews {
-    padding: 120px 0;
-    background-color: var(--bg);
+  padding: 120px 0;
+  background-color: var(--bg);
+  position: relative;
+  z-index: 1;
 
-    @include u.breakpoint-down(xsmall) {
-        padding: 80px 0;
-    }
+  @include u.breakpoint-down(xsmall) {
+    padding: 80px 0;
+  }
 
-    &__wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 50px;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    position: relative;
+    z-index: 2;
+  }
+  &__title-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  &__cards-wrapper {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    // align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+
+    @include u.breakpoint-down(small) {
+      flex-direction: column;
     }
-    &__title-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 24px;
-    }
-    &__cards-wrapper {
+    @include u.breakpoint-down(midlarge) {
+      flex-direction: column;
+      gap: 2rem;
+      .reviews__card {
         width: 100%;
-        height: fit-content;
-        display: flex;
-        // align-items: center;
-        justify-content: space-between;
-        gap: 3rem;
-
-        @include u.breakpoint-down(small) {
-            flex-direction: column;
-        }
-        @include u.breakpoint-down(midlarge) {
-            flex-direction: column;
-            gap: 2rem;
-            .reviews__card {
-                width: 100%;
-            }
-        }
+      }
     }
-    &__card {
-        display: flex;
-        flex-direction: column;
-        width: 410px;
-        min-width: 280px;
-        min-height: 100%;
-        background-color: var(--bg-secondary);
-        padding: 36px;
-        border-radius: 1.125rem;
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    width: 410px;
+    min-width: 280px;
+    min-height: 100%;
+    background-color: var(--bg-secondary);
+    padding: 36px;
+    border-radius: 1.125rem;
 
-        @include u.breakpoint-down(small) {
-            width: 100%;
-            height: auto;
-            padding: 24px;
+    @include u.breakpoint-down(small) {
+      width: 100%;
+      height: auto;
+      padding: 24px;
 
-            svg {
-                width: 22px;
-                height: 22px;
-            }
-        }
-        @include u.breakpoint-down(xsmall) {
-            padding: 24px;
-        }
+      svg {
+        width: 22px;
+        height: 22px;
+      }
     }
-    &__card-stars {
-        display: flex;
-        align-items: center;
-        margin-bottom: u.rem(22);
+    @include u.breakpoint-down(xsmall) {
+      padding: 24px;
+    }
+  }
+  &__card-stars {
+    display: flex;
+    align-items: center;
+    margin-bottom: u.rem(22);
 
-        svg {
-            path{
-                fill: #88d42c;
-            }
-        }
+    svg {
+      path {
+        fill: #88d42c;
+      }
     }
-    &__card-comment {
-        margin-bottom: u.rem(22);
-    }
+  }
+  &__card-comment {
+    margin-bottom: u.rem(22);
+  }
+  .reviews-design-element {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: calc(50% - 300px);
+    left: calc(0% - 300px);
+  }
 }

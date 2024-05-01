@@ -3,9 +3,8 @@
 .features {
   color: var(--white);
   background-color: var(--bg);
-  // padding-top: clamp(4rem, 3.1594827586206895rem + 3.5862068965517238vw, 5.625rem);
-  // padding-bottom: clamp(4rem, 3.1594827586206895rem + 3.5862068965517238vw, 5.625rem);
   padding: 0 0 120px 0;
+  position: relative;
 
   @include u.breakpoint-down(xsmall) {
     padding: 0 0 80px 0;
@@ -15,6 +14,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    z-index: 2;
   }
   &__h2 {
     text-align: center;
@@ -25,6 +26,8 @@
     display: grid;
     gap: 40px 26px;
     justify-content: center;
+    position: relative;
+    z-index: 2;
 
     @include u.breakpoint-up(large) {
       grid-template-columns: repeat(3, 1fr);
@@ -69,10 +72,11 @@
       height: u.rem(56);
     }
   }
-  // &__item-title {
-
-  // }
-  // &__item-description {
-
-  // }
+  .features-design-element {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: calc(0% - 200px);
+    left: calc(100% - 300px);
+  }
 }

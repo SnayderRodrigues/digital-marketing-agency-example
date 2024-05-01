@@ -102,6 +102,17 @@ textarea:focus-visible {
   font-weight: 600;
 }
 
+.design-element {
+  --gradient-from: var(--green);
+  --gradient-to: var(--yellow);
+  --gradient: var(--gradient-from), var(--gradient-to);
+  background-image: linear-gradient(to top right, var(--gradient));
+  filter: blur(240px);
+  border-radius: 50%;
+  position: absolute;
+  z-index: 0;
+}
+
 .visually-hidden {
   position: absolute;
   left: -10000px;
