@@ -383,10 +383,9 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100svh;
   background-color: var(--bg);
   text-align: center;
-  padding: 120px 0;
   position: relative;
 }
 .hero__wrapper {
@@ -399,17 +398,16 @@ h3 {
 .hero__headline-wrapper {
   position: relative;
   max-width: 850px;
-  margin-bottom: 3.125rem;
+  margin-bottom: 2rem;
 }
 .hero__headline {
   font-family: "Bebas Neue";
-  margin-bottom: 3.125rem;
+  margin-bottom: 2rem;
   max-width: 18ch;
   margin-inline: auto;
 }
 .hero__headline-description {
-  font-size: clamp(1.125rem, 1.0224358974rem + 0.5128205128vw, 1.375rem);
-  font-weight: 400;
+  font-size: clamp(1rem, 1.0224358974rem + 0.5128205128vw, 1.375rem);
   margin-inline: auto;
 }
 .hero__button-wrapper {
@@ -524,6 +522,8 @@ h3 {
   display: flex;
   align-items: center;
   gap: 4rem;
+  position: relative;
+  z-index: 2;
 }
 @media (max-width: 69.99875em) {
   .about__wrapper {
@@ -581,6 +581,7 @@ h3 {
 @media (max-width: 26.62375em) {
   .services {
     padding: 80px 0;
+    border-radius: 1.5rem;
   }
 }
 .services__wrapper {
@@ -627,12 +628,13 @@ h3 {
 }
 .services__cards-wrapper {
   display: grid;
-  grid-gap: 3.5625rem 2.375rem;
   grid-template-columns: repeat(auto-fit, minmax(22.625rem, 1fr));
+  grid-gap: 3.5625rem 2.375rem;
 }
 @media (max-width: 26.62375em) {
   .services__cards-wrapper {
     grid-template-columns: repeat(auto-fit, minmax(16.875rem, 1fr));
+    gap: 2rem;
   }
 }
 .services .card-element {
@@ -656,7 +658,7 @@ h3 {
   .services .card-element {
     color: var(--bg-secondary);
     background-color: var(--light-gray);
-    padding: 16px;
+    padding: 24px;
     transform: translateX(0);
   }
 }
@@ -671,7 +673,12 @@ h3 {
 .features {
   color: var(--white);
   background-color: var(--bg);
-  padding: 120px 0;
+  padding: 0 0 120px 0;
+}
+@media (max-width: 26.62375em) {
+  .features {
+    padding: 0 0 80px 0;
+  }
 }
 .features__h2-wrapper {
   display: flex;
@@ -757,18 +764,17 @@ h3 {
   height: fit-content;
   display: flex;
   justify-content: space-between;
-  gap: 50px;
+  gap: 3rem;
 }
 @media (max-width: 47.99875em) {
   .reviews__cards-wrapper {
     flex-direction: column;
-    gap: 50px;
   }
 }
 @media (max-width: 69.99875em) {
   .reviews__cards-wrapper {
     flex-direction: column;
-    gap: 50px;
+    gap: 2rem;
   }
   .reviews__cards-wrapper .reviews__card {
     width: 100%;
@@ -797,7 +803,7 @@ h3 {
 }
 @media (max-width: 26.62375em) {
   .reviews__card {
-    padding: 16px;
+    padding: 24px;
   }
 }
 .reviews__card-stars {
@@ -868,7 +874,7 @@ h3 {
 }
 @media (max-width: 47.99875em) {
   .call-to-action__content {
-    padding: 32px 16px;
+    padding: 32px 24px;
   }
 }
 @media (min-width: 48em) {
@@ -909,7 +915,7 @@ h3 {
 }
 @media (max-width: 26.62375em) {
   .faq {
-    padding: 80px 0;
+    padding: 80px 0 160px;
   }
 }
 .faq__wrapper {
@@ -1036,7 +1042,7 @@ h3 {
 }
 @media (max-width: 47.99875em) {
   .faq__question-div {
-    padding: 16px;
+    padding: 24px;
   }
 }
 .faq__question-div:not(:last-of-type) {
@@ -1059,6 +1065,7 @@ h3 {
 }
 @media (max-width: 26.62375em) {
   .faq__question {
+    min-height: 64.06px;
     padding: 0px;
   }
 }
@@ -1072,6 +1079,7 @@ h3 {
   transition: all 200ms linear;
   flex-shrink: 0;
   margin-left: 12px;
+  margin-right: 4px;
 }
 .faq__answer {
   display: grid;
@@ -1120,6 +1128,8 @@ h3 {
 @media (max-width: 26.62375em) {
   .contact {
     padding: 80px 0;
+    margin-top: -80px;
+    border-radius: 1.5rem;
   }
 }
 .contact__wrapper {
@@ -1196,7 +1206,7 @@ h3 {
 }
 @media (max-width: 26.62375em) {
   .contact__form {
-    padding: 32px 16px;
+    padding: 32px 24px;
   }
 }
 .contact__form-items {

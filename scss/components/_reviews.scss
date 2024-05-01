@@ -26,15 +26,14 @@
         display: flex;
         // align-items: center;
         justify-content: space-between;
-        gap: 50px;
+        gap: 3rem;
 
         @include u.breakpoint-down(small) {
             flex-direction: column;
-            gap: 50px;
         }
         @include u.breakpoint-down(midlarge) {
             flex-direction: column;
-            gap: 50px;
+            gap: 2rem;
             .reviews__card {
                 width: 100%;
             }
@@ -61,7 +60,7 @@
             }
         }
         @include u.breakpoint-down(xsmall) {
-            padding: 16px;
+            padding: 24px;
         }
     }
     &__card-stars {

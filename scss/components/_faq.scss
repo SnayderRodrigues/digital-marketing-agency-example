@@ -6,7 +6,7 @@
   color: var(--bg-secondary);
 
   @include u.breakpoint-down(xsmall) {
-    padding: 80px 0;
+    padding: 80px 0 160px;
   }
 
   &__wrapper {
@@ -123,7 +123,7 @@
       background-color 300ms linear;
 
     @include u.breakpoint-down(small) {
-      padding: 16px;
+      padding: 24px;
     }
   }
   &__question-div:not(:last-of-type) {
@@ -143,6 +143,7 @@
       padding: 10px;
     }
     @include u.breakpoint-down(xsmall) {
+      min-height: 64.06px;
       padding: 0px;
     }
   }
@@ -156,6 +157,7 @@
     transition: all 200ms linear;
     flex-shrink: 0;
     margin-left: 12px;
+    margin-right: 4px;
   }
   &__answer {
     display: grid;

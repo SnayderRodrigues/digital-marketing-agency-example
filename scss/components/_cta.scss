@@ -38,7 +38,6 @@
             grid-row: 1 / span 2;
             grid-column: 1 / span 2;
         }
-        
         @include u.breakpoint-up(large) {
             width: u.rem(477);
         }
@@ -54,7 +53,7 @@
         border-radius: 1.125rem;
         
         @include u.breakpoint-down(small) {
-            padding: 32px 16px;
+            padding: 32px 24px;
         }
 
         @include u.breakpoint-up(medium) {
