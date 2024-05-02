@@ -106,11 +106,32 @@ textarea:focus-visible {
   --gradient-from: var(--green);
   --gradient-to: var(--yellow);
   --gradient: var(--gradient-from), var(--gradient-to);
+  width: 600px;
+  height: 600px;
   background-image: linear-gradient(to top right, var(--gradient));
   filter: blur(240px);
   border-radius: 50%;
   position: absolute;
   z-index: 0;
+
+  @include u.breakpoint-down(midlarge) {
+    width: 540px;
+    height: 540px;
+  }
+  @include u.breakpoint-down(medium) {
+    width: 480px;
+    height: 480px;
+  }
+  @include u.breakpoint-down(small) {
+    width: 420px;
+    height: 420px;
+    filter: blur(200px);
+  }
+  @include u.breakpoint-down(xsmall) {
+    width: 360px;
+    height: 360px;
+    filter: blur(180px);
+  }
 }
 
 .visually-hidden {

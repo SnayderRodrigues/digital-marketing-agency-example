@@ -1,106 +1,117 @@
-@use '../util/' as u;
+@use "../util/" as u;
 
 .footer {
-    background-color: var(--bg);
-    // border-top: 4px solid var(--bg-secondary);
-    // padding-bottom: 64px;
+  background-color: var(--bg);
+  position: relative;
+  overflow: hidden;
 
-    // @include u.breakpoint-up(medium) {
-    //     padding-bottom: 120px;
-    // }
-    
-    // @include u.breakpoint-up(large) {
-    //     padding-bottom: 120px;
-    // }
-    
-    &__wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 56px 0;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 0;
+    position: relative;
+    z-index: 1;
 
-        @include u.breakpoint-down(small) {
-            flex-direction: column;
-            gap: 40px;
-        }
+    @include u.breakpoint-down(small) {
+      flex-direction: column;
+      gap: 40px;
+      padding: 60px 0;
     }
-    &__logo-wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
+  }
+  &__logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 
-        @include u.breakpoint-down(small) {
-            align-items: center;
-        }
+    @include u.breakpoint-down(small) {
+      align-items: center;
     }
-    &__logo {
-        color: var(--white);
-        font-family: 'Bebas Neue';
-        font-size: u.rem(36);
-        font-weight: bold;
-        
-        span {
-            color: var(--green)
-        }
-    }
-    &__links {
-        display: flex;
-        // align-items: center;
-        gap: 28px;
-    }
-    &__link {
-        path {
-            fill: var(--white);
-        }
-        &:hover {
-            path {
-                fill: var(--green);
-            }
-        }
-    }
-    &__icon {
-        width: 24px;
-        height: 24px;
-        path {
-            transition: fill 200ms ease-in-out;
-        }
-    }
-    &__nav-div {
-        display: flex;
-        gap: 100px;
+  }
+  &__logo {
+    color: var(--white);
+    font-family: "Bebas Neue";
+    font-size: u.rem(36);
+    font-weight: bold;
 
-        @include u.breakpoint-down(medium) {
-            gap: 40px;
-        }
-        @include u.breakpoint-down(small) {
-            width: 100%;
-            justify-content: space-evenly;
-            gap: 16px;
-            order: -1;
-        }
-        @include u.breakpoint-down(xsmall) {
-            flex-direction: column;
-            align-items: center;
-        }
+    span {
+      color: var(--green);
     }
-    &__navigation {
-        display: flex;
-        flex-direction: column;
-        // font-weight: 600;
-        strong {
-            margin-bottom: 0.75rem;
-            font-size: 1.5rem;
-        }
-        a {
-            color: var(--white);
-            transition: color 200ms linear;
-        }
-        a:hover {
-            color: var(--green);
-        }
+  }
+  &__links {
+    display: flex;
+    // align-items: center;
+    gap: 28px;
+  }
+  &__link {
+    path {
+      fill: var(--white);
+    }
+    &:hover {
+      path {
+        fill: var(--green);
+      }
+    }
+  }
+  &__icon {
+    width: 24px;
+    height: 24px;
+    path {
+      transition: fill 200ms ease-in-out;
+    }
+  }
+  &__nav-div {
+    display: flex;
+    gap: 100px;
 
-        @include u.breakpoint-down(xsmall) {
-            align-items: center;
-        }
+    @include u.breakpoint-down(medium) {
+      gap: 40px;
     }
+    @include u.breakpoint-down(small) {
+      width: 100%;
+      justify-content: space-evenly;
+      gap: 16px;
+      order: -1;
+    }
+    @include u.breakpoint-down(xsmall) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__navigation {
+    display: flex;
+    flex-direction: column;
+    // font-weight: 600;
+    strong {
+      margin-bottom: 0.75rem;
+      font-size: 1.5rem;
+    }
+    a {
+      color: var(--white);
+      transition: color 200ms linear;
+    }
+    a:hover {
+      color: var(--green);
+    }
+
+    @include u.breakpoint-down(xsmall) {
+      align-items: center;
+    }
+  }
+  .footer-design-element {
+    top: 80%;
+    left: 20%;
+    @include u.breakpoint-down(midlarge) {
+      left: calc(50% - 270px);
+    }
+    @include u.breakpoint-down(medium) {
+      left: calc(50% - 240px);
+    }
+    @include u.breakpoint-down(small) {
+      left: calc(50% - 210px);
+    }
+    @include u.breakpoint-down(xsmall) {
+      left: calc(50% - 180px);
+    }
+  }
 }
