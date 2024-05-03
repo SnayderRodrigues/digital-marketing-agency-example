@@ -108,7 +108,8 @@
     flex-direction: column;
     width: 60%;
     color: var(--bg-secondary);
-    border: 2px solid var(--bg-secondary);
+    background-color: var(--light-gray);
+    // border: 2px solid var(--bg-secondary);
     border-radius: 1.125rem;
 
     @include u.breakpoint-down(small) {
@@ -130,7 +131,7 @@
     }
   }
   &__question-div:not(:last-of-type) {
-    border-bottom: 2px solid var(--bg-secondary);
+    border-bottom: 1.5px solid var(--bg-secondary);
   }
   &__question {
     display: flex;
@@ -165,7 +166,6 @@
   &__answer {
     display: grid;
     grid-template-rows: 0fr;
-    background-color: var(--white);
     padding: 0 10px;
     line-height: 26px;
     overflow: hidden;

@@ -8,7 +8,7 @@
 body {
   background-color: var(--bg);
   margin: 0;
-  font-family: "Manrope", Arial, Helvetica, sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: clamp(1rem, 0.9353448276rem + 0.275862069vw, 1.125rem);
   line-height: 1.78;
   overflow-x: hidden;
@@ -87,6 +87,11 @@ textarea:focus-visible {
 }
 @media (max-width: 47.99875em) {
   .wrapper {
+    width: min(100% - 2.5rem, 87.5rem);
+  }
+}
+@media (max-width: 31.24875em) {
+  .wrapper {
     width: min(100% - 2rem, 87.5rem);
   }
 }
@@ -153,24 +158,8 @@ textarea:focus-visible {
   --bg-secondary: #2c2c2c;
 }
 
-/* bebas neue-regular - latin */
-@font-face {
-  font-display: swap;
-  font-family: "Bebas Neue";
-  font-style: normal;
-  font-weight: 400;
-  src: url("/assets/fonts/bebas-neue-v14-latin-regular.woff2") format("woff2");
-}
-/* manrope-regular - latin */
-@font-face {
-  font-display: swap;
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../../assets/fonts/manrope-v15-latin-regular.woff2") format("woff2");
-}
 h1, h2, h3 {
-  font-family: "Bebas Neue";
+  font-family: "Bebas Neue", sans-serif;
   line-height: 1.1;
   letter-spacing: 2px;
 }
@@ -191,7 +180,7 @@ h3 {
 }
 
 .button {
-  padding: 12px 22px 12px;
+  padding: 12px 22px;
   color: var(--bg-secondary);
   font-weight: 600;
   background-color: var(--green);
@@ -204,7 +193,7 @@ h3 {
 }
 @media (min-width: 56.25em) {
   .button {
-    padding: 16px 30px 16px;
+    padding: 14px 30px;
   }
 }
 .button:hover {
@@ -221,7 +210,7 @@ h3 {
   left: 0;
   transform: translate(-110%, 0);
   border: none;
-  transition: transform 500ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: transform 300ms ease-in-out;
   will-change: transform;
   z-index: -1;
 }
@@ -230,12 +219,12 @@ h3 {
 }
 
 .button-2 {
-  padding: 12px 22px 12px;
+  padding: 12px 22px;
   color: var(--bg-secondary);
   font-weight: 600;
   background-color: var(--green);
   border-radius: 999px;
-  transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 300ms ease-in-out;
   overflow: hidden;
   position: relative;
   text-decoration: none;
@@ -243,7 +232,7 @@ h3 {
 }
 @media (min-width: 56.25em) {
   .button-2 {
-    padding: 16px 30px 16px;
+    padding: 14px 30px;
   }
 }
 .button-2:hover {
@@ -553,16 +542,9 @@ h3 {
 }
 
 .about {
-  padding: 240px 0 120px 0;
+  padding: 120px 0;
   background-color: var(--bg);
   color: var(--white);
-  margin-top: -120px;
-}
-@media (max-width: 47.99875em) {
-  .about {
-    padding: 120px 0;
-    margin-top: 0;
-  }
 }
 @media (max-width: 31.24875em) {
   .about {
@@ -596,8 +578,15 @@ h3 {
 .about__description-wrapper > span {
   margin-bottom: 1rem;
 }
+.about__description-wrapper > span:last-of-type {
+  margin-bottom: 2rem;
+}
 .about__description-title {
   margin-bottom: 2rem;
+}
+.about__description-button {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .about__image-wrapper {
   width: 50%;
@@ -854,7 +843,7 @@ h3 {
      object-position: 0 20%;
 }
 .works__card span:first-of-type {
-  font-weight: 600;
+  font-weight: 700;
 }
 .works__card:first-of-type {
   grid-column: 1/3;
@@ -1164,7 +1153,7 @@ h3 {
   flex-direction: column;
   width: 60%;
   color: var(--bg-secondary);
-  border: 2px solid var(--bg-secondary);
+  background-color: var(--light-gray);
   border-radius: 1.125rem;
 }
 @media (max-width: 47.99875em) {
@@ -1189,7 +1178,7 @@ h3 {
   }
 }
 .faq__question-div:not(:last-of-type) {
-  border-bottom: 2px solid var(--bg-secondary);
+  border-bottom: 1.5px solid var(--bg-secondary);
 }
 .faq__question {
   display: flex;
@@ -1227,7 +1216,6 @@ h3 {
 .faq__answer {
   display: grid;
   grid-template-rows: 0fr;
-  background-color: var(--white);
   padding: 0 10px;
   line-height: 26px;
   overflow: hidden;

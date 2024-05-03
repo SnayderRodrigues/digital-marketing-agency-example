@@ -10,7 +10,7 @@
 body {
   background-color: var(--bg);
   margin: 0;
-  font-family: "Manrope", Arial, Helvetica, sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: clamp(
     u.rem(16),
     0.9353448275862069rem + 0.27586206896551724vw,
@@ -93,6 +93,9 @@ textarea:focus-visible {
   width: min(100% - u.rem(64), u.rem(1400));
   margin-inline: auto;
   @include u.breakpoint-down(small) {
+    width: min(100% - u.rem(40), u.rem(1400));
+  }
+  @include u.breakpoint-down(xsmall) {
     width: min(100% - u.rem(32), u.rem(1400));
   }
 }

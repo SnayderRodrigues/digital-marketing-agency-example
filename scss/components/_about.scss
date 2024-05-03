@@ -1,16 +1,11 @@
 @use '../util/' as u;
 
 .about {
-    padding: 240px 0 120px 0;
+    padding: 120px 0;
     background-color: var(--bg);
     color: var(--white);
     // position: relative;
-    margin-top: -120px;
 
-    @include u.breakpoint-down(small) {
-        padding: 120px 0;
-        margin-top: 0;
-    }
     @include u.breakpoint-down(xsmall) {
         padding: 80px 0;
         gap: 80px;
@@ -40,9 +35,15 @@
         & > span {
             margin-bottom: 1rem;
         }
+        & > span:last-of-type {
+            margin-bottom: 2rem;
+        }
     }
     &__description-title {
         margin-bottom: 2rem;
+    }
+    &__description-button {
+        width: fit-content;
     }
     &__image-wrapper {
         width: 50%;
