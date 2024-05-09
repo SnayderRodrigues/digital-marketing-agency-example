@@ -1,12 +1,12 @@
 @use "../util/" as u;
 
 .reviews {
-  padding: 120px 0;
+  padding: 120px 0 32px;
   background-color: var(--bg);
   position: relative;
 
   @include u.breakpoint-down(xsmall) {
-    padding: 80px 0;
+    padding: 80px 0 32px;
   }
 
   &__wrapper {
@@ -29,7 +29,7 @@
     display: flex;
     // align-items: center;
     justify-content: space-between;
-    gap: 3rem;
+    gap: 2rem;
 
     @include u.breakpoint-down(small) {
       flex-direction: column;
@@ -37,15 +37,12 @@
     @include u.breakpoint-down(midlarge) {
       flex-direction: column;
       gap: 2rem;
-      .reviews__card {
-        width: 100%;
-      }
     }
   }
   &__card {
     display: flex;
     flex-direction: column;
-    width: 410px;
+    width: 100%;
     min-width: 280px;
     min-height: 100%;
     background-color: var(--bg-secondary);
