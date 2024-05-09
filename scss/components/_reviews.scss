@@ -67,15 +67,31 @@
     display: flex;
     align-items: center;
     margin-bottom: u.rem(22);
-
-    svg {
-      path {
-        fill: #88d42c;
-      }
-    }
+  }
+  &__card-star {
+    width: clamp(1.5rem, 1.3518518518518519rem + 0.7407407407407408vw, 2rem);
+    height: clamp(1.5rem, 1.3518518518518519rem + 0.7407407407407408vw, 2rem);
+    background-color: var(--green);
+    clip-path: polygon(
+      50% 0%,
+      61% 35%,
+      98% 35%,
+      68% 57%,
+      79% 91%,
+      50% 70%,
+      21% 91%,
+      32% 57%,
+      2% 35%,
+      39% 35%
+    );
   }
   &__card-comment {
     margin-bottom: u.rem(22);
+  }
+  &__card-author {
+    display: flex;
+    align-items: flex-end;
+    flex-grow: 1;
   }
   .reviews-design-element {
     position: absolute;

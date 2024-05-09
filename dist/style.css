@@ -836,7 +836,7 @@ h3 {
 }
 .works__card img {
   border-radius: 1.125rem;
-  max-height: 480px;
+  max-height: 380px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: 0 20%;
@@ -927,11 +927,20 @@ h3 {
   align-items: center;
   margin-bottom: 1.375rem;
 }
-.reviews__card-stars svg path {
-  fill: #88d42c;
+.reviews__card-star {
+  width: clamp(1.5rem, 1.3518518519rem + 0.7407407407vw, 2rem);
+  height: clamp(1.5rem, 1.3518518519rem + 0.7407407407vw, 2rem);
+  background-color: var(--green);
+  -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+          clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
 }
 .reviews__card-comment {
   margin-bottom: 1.375rem;
+}
+.reviews__card-author {
+  display: flex;
+  align-items: flex-end;
+  flex-grow: 1;
 }
 .reviews .reviews-design-element {
   position: absolute;
