@@ -64,11 +64,11 @@ input {
 }
 
 textarea {
+  font-family: system-ui, sans-serif;
   padding: 0;
 }
 
 option {
-  font-family: "Manrope", Arial, Helvetica, sans-serif;
   font-weight: normal;
   display: block;
   min-height: 1.2em;
@@ -81,7 +81,7 @@ select:focus,
 input:focus,
 textarea:focus-visible {
   outline: 0;
-  border-bottom: 1px solid var(--green) !important;
+  border: 0;
 }
 
 textarea:focus-visible {
