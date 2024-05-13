@@ -50,7 +50,11 @@
       border-radius: 1.125rem;
       max-height: 380px;
       object-fit: cover;
-      object-position: 0 20%;
+      object-position: center 20%;
+
+      @include u.breakpoint-down(small) {
+      aspect-ratio: 1 / 1 ;
+      }
     }
 
     span:first-of-type {
