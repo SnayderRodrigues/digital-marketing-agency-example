@@ -25,16 +25,24 @@
   &__headline {
     font-family: "Bebas Neue";
     margin-bottom: 2rem;
-    max-width: 18ch;
+    // max-width: 18ch;
     margin-inline: auto;
   }
   &__headline-description {
     font-size: clamp(
-      u.rem(16),
-      1.0224358974358974rem + 0.5128205128205128vw,
-      u.rem(22)
+      1rem,
+      -0.9363636363636363rem + 5.454545454545454vh,
+      1.375rem
     );
     margin-inline: auto;
+
+    @include u.breakpoint-down(midlarge) {
+      font-size: clamp(
+        u.rem(16),
+        1.0224358974358974rem + 0.5128205128205128vw,
+        u.rem(22)
+      );
+    }
   }
   &__button-wrapper {
     display: flex;

@@ -168,7 +168,13 @@ h1 span, h2 span, h3 span {
 }
 
 h1 {
-  font-size: clamp(2.75rem, 1.8269230769rem + 4.6153846154vw, 6.25rem);
+  font-size: 2.75rem;
+  font-size: clamp(2.75rem, -15.3227272727rem + 50.9090909091vh, 6.25rem);
+}
+@media (max-width: 69.99875em) {
+  h1 {
+    font-size: clamp(2.75rem, 1.8269230769rem + 4.6153846154vw, 6.25rem);
+  }
 }
 
 h2 {
@@ -261,11 +267,11 @@ h3 {
   width: 100%;
   background-color: transparent;
   color: var(--white);
-  padding-block: 32px 12px;
+  padding-block: clamp(1rem, -4.1636363636rem + 14.5454545455vh, 2rem);
   transition: all 200ms linear;
 }
 .header.opaque {
-  padding-block: 12px 12px;
+  padding-block: clamp(0.25rem, -2.3318181818rem + 7.2727272727vh, 0.75rem);
   background-color: rgba(18, 18, 18, 0.7);
 }
 .header.opaque:hover {
@@ -429,12 +435,16 @@ h3 {
 .hero__headline {
   font-family: "Bebas Neue";
   margin-bottom: 2rem;
-  max-width: 18ch;
   margin-inline: auto;
 }
 .hero__headline-description {
-  font-size: clamp(1rem, 1.0224358974rem + 0.5128205128vw, 1.375rem);
+  font-size: clamp(1rem, -0.9363636364rem + 5.4545454545vh, 1.375rem);
   margin-inline: auto;
+}
+@media (max-width: 69.99875em) {
+  .hero__headline-description {
+    font-size: clamp(1rem, 1.0224358974rem + 0.5128205128vw, 1.375rem);
+  }
 }
 .hero__button-wrapper {
   display: flex;

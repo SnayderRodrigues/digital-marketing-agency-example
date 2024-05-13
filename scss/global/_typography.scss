@@ -11,7 +11,11 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: clamp(u.rem(44), 1.8269230769230769rem + 4.615384615384616vw, u.rem(100));
+    font-size: 2.75rem;
+font-size: clamp(2.75rem, -15.32272727272727rem + 50.90909090909091vh, 6.25rem);
+    @include u.breakpoint-down(midlarge) {
+        font-size: clamp(u.rem(44), 1.8269230769230769rem + 4.615384615384616vw, u.rem(100));
+    }
 }
 
 h2 {
