@@ -1,31 +1,31 @@
-@use '../util/' as u;
+@use "../util/" as u;
 
-h1, h2, h3 {
-    font-family: "Bebas Neue", sans-serif;
-    line-height: 1.1;
-    letter-spacing: 2px;
-
-    span {
-        color: var(--green);
-    }
+h1,
+h2,
+h3 {
+  line-height: 1.4;
+  text-transform: capitalize;
 }
 
 h1 {
-    font-size: 2.75rem;
-font-size: clamp(2.75rem, -15.32272727272727rem + 50.90909090909091vh, 6.25rem);
-    @include u.breakpoint-down(midlarge) {
-        font-size: clamp(u.rem(44), 1.8269230769230769rem + 4.615384615384616vw, u.rem(100));
-    }
+  font-size: clamp(
+    2.75rem,
+    -15.32272727272727rem + 50.90909090909091vh,
+    5.25rem
+  );
+  @include u.breakpoint-down(midlarge) {
+    font-size: clamp(2rem, 1.2rem + 4vw, 4rem);
+  }
 }
 
 h2 {
-    font-size: clamp(u.rem(32), 1.2241379310344829rem + 3.3103448275862064vw, u.rem(56));
+  font-size: clamp(
+    u.rem(32),
+    1.2241379310344829rem + 3.3103448275862064vw,
+    u.rem(56)
+  );
 }
 
 h3 {
-    font-size: clamp(1.75rem, 1.6206896551724137rem + 0.5517241379310345vw, 2rem);
+  font-size: clamp(1.75rem, 1.6206896551724137rem + 0.5517241379310345vw, 2rem);
 }
-
-// p {
-//     font-size: clamp(u.rem(16), 0.9353448275862069rem + 0.27586206896551724vw, u.rem(18));
-// }

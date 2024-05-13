@@ -23,9 +23,8 @@
     margin-bottom: 2rem;
   }
   &__headline {
-    font-family: "Bebas Neue";
+    text-transform: capitalize;
     margin-bottom: 2rem;
-    // max-width: 18ch;
     margin-inline: auto;
   }
   &__headline-description {

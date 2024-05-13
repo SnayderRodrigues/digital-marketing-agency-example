@@ -10,7 +10,7 @@
 body {
   background-color: var(--bg);
   margin: 0;
-  font-family: "Manrope", sans-serif;
+  font-family: system-ui, sans-serif;
   font-size: clamp(
     u.rem(16),
     0.9353448275862069rem + 0.27586206896551724vw,
@@ -98,6 +98,22 @@ textarea:focus-visible {
   @include u.breakpoint-down(xsmall) {
     width: min(100% - u.rem(32), u.rem(1400));
   }
+}
+
+.bg-highlight {
+  // color: var(--bg-secondary);
+  margin: 0 -0.2em;
+  padding: 0em 0.2em;
+  border-radius: 1.8em 1.3em;
+  background: transparent;
+  background-image: linear-gradient(
+    to right,
+    #1f300b,
+    #2d460f 4%,
+    #88d42c
+  );
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 
 .highlight {
