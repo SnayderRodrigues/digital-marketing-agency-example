@@ -57,7 +57,12 @@
   }
   &__p {
     a {
-      color: var(--green);
+      font-weight: 600;
+      color: var(--bg-secondary);
+
+      &:hover {
+        color: var(--green);
+      }
     }
     margin-bottom: 2rem;
   }

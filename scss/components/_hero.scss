@@ -76,19 +76,22 @@
     gap: 2rem;
     background-color: transparent;
     color: var(--white);
+    padding: 11px 21px;
     border: 1px solid var(--white);
-    // padding: 12px 22px 12px;
+
+    &:hover {
+      border: 1px solid var(--green);
+    }
 
     @include u.breakpoint-down(small) {
-      color: var(--bg);
+      color: var(--bg-secondary);
       background-color: var(--white);
-      border: none;
     }
     @include u.breakpoint-down(xsmall) {
       width: 100% !important;
     }
-    &:hover {
-      color: var(--bg);
+    @include u.breakpoint-up(large) {
+      padding: 13px 29px;
     }
   }
   .hero-design-element-1 {
