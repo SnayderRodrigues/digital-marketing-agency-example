@@ -23,14 +23,14 @@
     }
     @include u.breakpoint-down(midlarge) {
       flex-direction: column;
-      gap: 2rem;
+      gap: 4rem;
     }
   }
   &__description {
-    width: 65%;
+    width: 60%;
     background-color: var(--bg-secondary);
     color: var(--white);
-    padding: 60px;
+    padding: 0px 60px;
 
     display: flex;
     flex-direction: column;
@@ -45,14 +45,11 @@
     @include u.breakpoint-down(midlarge) {
       width: 100%;
       justify-content: start;
+      padding: 0px;
     }
   }
   &__description-h2 {
     margin-bottom: 2rem;
-  }
-  &__p-headline {
-    font-size: u.rem(22);
-    margin-bottom: 1rem;
   }
   &__description-div {
     margin-bottom: 2rem;
@@ -65,7 +62,7 @@
     flex-direction: column;
     justify-content: center;
     // gap: 1rem;
-    width: 35%;
+    width: 40%;
     color: var(--bg-secondary);
     background-color: var(--white);
     padding: 60px;
@@ -78,6 +75,7 @@
     @include u.breakpoint-down(small) {
       width: 100%;
       justify-content: start;
+      padding: 40px;
     }
     @include u.breakpoint-down(xsmall) {
       padding: 32px 24px;
@@ -120,7 +118,7 @@
     padding: 0.725rem;
     border: 0;
     border-radius: 1rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     transition: border 200ms linear;
   }
   .message {
