@@ -69,6 +69,11 @@
   }
   &__button {
     width: fit-content;
+
+    &:hover {
+      color: var(--bg);
+      background-color: var(--white);
+    }
   }
   .call-to-action-design-element {
     position: absolute;
