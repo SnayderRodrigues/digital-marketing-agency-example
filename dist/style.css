@@ -108,7 +108,6 @@ textarea:focus-visible {
 
 .highlight {
   color: var(--green);
-  font-weight: 600;
 }
 
 .design-element {
@@ -246,12 +245,10 @@ h3 {
 }
 .header__logo {
   color: var(--white);
-  font-family: "Bebas Neue";
-  font-size: 2.25rem;
+  font-size: 1.75rem;
   font-weight: bold;
-}
-.header__logo span {
-  color: var(--green);
+  text-transform: uppercase;
+  letter-spacing: -3px;
 }
 .header__navbar {
   display: flex;
@@ -1375,12 +1372,10 @@ h3 {
 }
 .footer__logo {
   color: var(--white);
-  font-family: "Bebas Neue";
   font-size: 2.25rem;
   font-weight: bold;
-}
-.footer__logo span {
-  color: var(--green);
+  text-transform: uppercase;
+  letter-spacing: -3px;
 }
 .footer__links {
   display: flex;

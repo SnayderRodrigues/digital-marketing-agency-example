@@ -35,13 +35,10 @@
     }
     &__logo {
         color: var(--white);
-        font-family: 'Bebas Neue';
-        font-size: u.rem(36);
+        font-size: u.rem(28);
         font-weight: bold;
-
-        span {
-            color: var(--green);
-        }
+        text-transform: uppercase;
+        letter-spacing: -3px;
     }
     &__navbar {
         display: flex;
