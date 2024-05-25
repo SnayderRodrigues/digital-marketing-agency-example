@@ -72,13 +72,8 @@
     width: 100%;
     min-height: 100%;
     padding: 28px;
-    // background-color: var(--yellow);
+    background-color: var(--light-gray);
     border-radius: 1.125rem;
-    transform: translateX(-28px);
-    transition: border 200ms ease-in-out, background-color 200ms ease-in-out,
-      color 0ms, transform 300ms ease-in-out, color 200ms ease-in-out;
-
-    cursor: default;
 
     @include u.breakpoint-down(small) {
       padding: 24px;
@@ -89,11 +84,6 @@
       color: var(--bg-secondary);
       background-color: var(--light-gray);
       padding: 24px;
-      transform: translateX(0);
-    }
-
-    &:hover {
-      background-color: var(--light-gray);
       transform: translateX(0);
     }
 

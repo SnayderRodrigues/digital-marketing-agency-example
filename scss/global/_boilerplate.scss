@@ -8,8 +8,7 @@
 }
 
 body {
-  background-color: var(--bg);
-  margin: 0;
+  color: var(--white);
   font-family: system-ui, sans-serif;
   font-size: clamp(
     u.rem(16),
@@ -17,8 +16,9 @@ body {
     u.rem(18)
   );
   line-height: 1.78;
+  background-color: var(--bg);
+  margin: 0;
   overflow-x: hidden;
-  color: var(--white);
 }
 
 main {
@@ -106,12 +106,7 @@ textarea:focus-visible {
   padding: 0em 0.2em;
   border-radius: 1.8em 1.3em;
   background: transparent;
-  background-image: linear-gradient(
-    to right,
-    #1f300b,
-    #2d460f 4%,
-    #88d42c
-  );
+  background-image: linear-gradient(to right, #1f300b, #2d460f 4%, #88d42c);
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }
