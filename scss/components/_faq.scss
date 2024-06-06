@@ -55,6 +55,16 @@
       justify-content: start;
     }
   }
+  &__form-div-half {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
+    @include u.breakpoint-down(small) {
+      flex-direction: column;
+      gap: 0rem;
+    }
+  }
   &__p {
     a {
       font-weight: 600;
@@ -75,6 +85,7 @@
   &__form-items {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
   &__form-items-title {
     font-size: u.rem(16);

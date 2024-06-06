@@ -70,6 +70,10 @@ textarea {
   padding: 0;
 }
 
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
 option {
   font-weight: normal;
   display: block;
