@@ -39,7 +39,7 @@
       flex-direction: column;
     }
   }
-  &__form-div {
+  &__contact-div {
     display: flex;
     flex-direction: column;
     // gap: 1rem;
@@ -53,16 +53,6 @@
     @include u.breakpoint-down(small) {
       width: 100%;
       justify-content: start;
-    }
-  }
-  &__form-div-half {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    
-    @include u.breakpoint-down(small) {
-      flex-direction: column;
-      gap: 0rem;
     }
   }
   &__p {
@@ -82,41 +72,11 @@
       color: var(--bg-secondary);
     }
   }
-  &__form-items {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  &__form-items-title {
-    font-size: u.rem(16);
-    line-height: 1.3;
-    margin-bottom: 0.5rem;
-  }
-  .form-control {
-    width: 100%;
-    font-size: u.rem(16);
-    background-color: var(--light-gray);
-    padding: 0.725rem;
-    border: 0;
-    border-radius: 1rem;
-    margin-bottom: 1rem;
-    transition: border 200ms linear;
-  }
-  .message {
-    resize: vertical;
-  }
-  &__button-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  &__contact-button {
     width: fit-content;
-    position: relative;
-  }
-  &__form-button {
     text-align: center;
     padding: 16px 70px 16px;
   }
-
   &__accordion {
     display: flex;
     flex-direction: column;
