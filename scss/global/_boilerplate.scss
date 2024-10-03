@@ -9,7 +9,7 @@
 
 body {
   color: var(--white);
-  font-family: system-ui, sans-serif;
+  font-family: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif;
   font-size: clamp(
     u.rem(16),
     0.9353448275862069rem + 0.27586206896551724vw,
@@ -66,7 +66,7 @@ input {
 }
 
 textarea {
-  font-family: system-ui, sans-serif;
+  font-family: inherit;
   padding: 0;
 }
 
