@@ -1,154 +1,177 @@
-@use '../util/' as u;
+@use "../util/" as u;
 
 .header {
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-    width: 100%;
-    background-color: transparent;
-    color: var(--white);
-    // border-bottom: 4px solid var(--bg-secondary);
-    padding-block: clamp(1rem, -4.163636363636363rem + 14.545454545454545vh, 2rem);
-    transition: all 200ms linear;
-    
-    &.opaque {
-        padding-block: clamp(0.25rem, -2.3318181818181816rem + 7.2727272727272725vh, 0.75rem);
-        background-color: rgba(18, 18, 18, 0.7);
-    }
-    &.opaque:hover {
-        background-color: var(--bg);
-    }
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: transparent;
+  color: var(--white);
+  border-bottom: 1px solid transparent;
+  padding-block: clamp(
+    1rem,
+    -4.163636363636363rem + 14.545454545454545vh,
+    2rem
+  );
+  transition: all 200ms linear;
+
+  &.opaque {
+    padding-block: clamp(
+      0.25rem,
+      -2.3318181818181816rem + 7.2727272727272725vh,
+      0.75rem
+    );
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
     @include u.breakpoint-down(small) {
-        padding-block: 12px 12px;
-
-        &.opaque, &.opaque:hover {
-            background-color: rgba(18, 18, 18, 0.9 );
-        }
-
+      backdrop-filter: none;
+      background: var(--bg);
     }
+  }
+  &.opaque:hover {
+    background-color: var(--bg);
+  }
+  @include u.breakpoint-down(small) {
+    padding-block: 12px 12px;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo {
+    color: var(--white);
+    font-size: u.rem(28);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    transition: color 200ms ease-in-out;
 
 
-    &__wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    &:hover {
+        color: var(--green);
     }
-    &__logo {
+  }
+  &__navbar {
+    display: flex;
+    align-items: center;
+    gap: 0;
+
+    @include u.breakpoint-down(small) {
+      gap: 24px;
+    }
+  }
+  &__list-div {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    @include u.breakpoint-down(small) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 999;
+      padding: 3rem;
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(10px);
+      opacity: 0;
+      user-select: none;
+      pointer-events: none;
+      transition: opacity 500ms;
+    }
+  }
+  &__list-div.open-menu {
+    opacity: 1;
+    user-select: all;
+    pointer-events: all;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    @include u.breakpoint-down(small) {
+      flex-direction: column;
+      align-items: flex-start;
+      a {
         color: var(--white);
-        font-size: u.rem(28);
-        font-weight: bold;
-        text-transform: uppercase;
-        letter-spacing: -3px;
+      }
     }
-    &__navbar {
-        display: flex;
-        align-items: center;
-        gap: 24px;
+  }
+  &__link {
+    font-weight: 600;
+    color: var(--white);
+    transition: color 200ms ease-in-out;
 
-        @include u.breakpoint-up(medium) {
-            gap: 0;
-        }
+    &:hover {
+      color: var(--green);
     }
-    &__list-div {
-        display: flex;
-        align-items: center;
-        gap: 24px;
 
+    @include u.breakpoint-down(small) {
+      font-size: 1.5rem;
+    }
+  }
+  &__button {
+    padding: 6px 24px;
 
-        @include u.breakpoint-down(small) {
-            position: fixed;
-            top: 0px;
-            left: 0;
-            justify-content: center;
-            width: 100%;
-            height: 100%;
-            z-index: 999;
-            // height: 100%;
-            padding: 2rem;
-            background-color: var(--bg-secondary);
-            translate: 0 -100%;
-            transition: translate 500ms;
-        }
+    @include u.breakpoint-down(xsmall) {
+      display: none;
     }
-    &__list-div.open-menu {
-        translate: 0 0;
-    }
-    &__list {
-        display: flex;
-        align-items: center;
-        gap: 24px;
+  }
+  &__menu {
+    display: none;
+    position: relative;
+    z-index: 999;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
 
-        @include u.breakpoint-down(small) {
-            flex-direction: column;
-            a {
-                color: var(--white);
-            }
-        }
+    @include u.breakpoint-down(small) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
-    &__link {
-        font-weight: 600;
-        color: var(--white);
-        transition: color 200ms ease-in-out;
-        
-        &:hover {
-            color: var(--green);
-        }
-    }
-    &__button {
-        padding: 4px 12px;
+  }
+  &__menu-button {
+    width: 36px;
+    height: 3px;
+    background-color: transparent;
+    transition: all 200ms ease-in-out;
+  }
+  &__menu-button::before,
+  &__menu-button::after {
+    content: "";
+    width: 36px;
+    height: 3px;
+    background-color: var(--white);
+    position: absolute;
+    transition: all 200ms ease-in-out;
+  }
+  &__menu-button::before {
+    transform: translateY(-6px);
+  }
+  &__menu-button::after {
+    transform: translateY(6px);
+  }
+  // &__menu.open-menu > .header__menu-button {
+  //     transform: translateX(-36px);
+  // }
+  &__menu.open-menu > .header__menu-button::before {
+    transform: rotate(45deg);
+  }
+  &__menu.open-menu > .header__menu-button::after {
+    transform: rotate(-45deg);
+  }
+  .link-hidden {
+    display: none;
 
-        @include u.breakpoint-down(xsmall) {
-            display: none;
-        }
+    @include u.breakpoint-down(small) {
+      display: block;
     }
-    &__menu {
-        display: none;
-        position: relative;
-        z-index: 999;
-        width: 36px;
-        height: 36px;
-        cursor: pointer;
-
-        @include u.breakpoint-down(small) {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    }
-    &__menu-button {
-        width: 36px;
-        height: 3px;
-        background-color: transparent;
-        transition: all 200ms ease-in-out;
-    }
-    &__menu-button::before, &__menu-button::after {
-        content: '';
-        width: 36px;
-        height: 3px;
-        background-color: var(--white);
-        position: absolute;
-        transition: all 200ms ease-in-out;
-    }
-    &__menu-button::before {
-        transform: translateY(-6px);
-    }
-    &__menu-button::after {
-        transform: translateY(6px);
-    }
-    // &__menu.open-menu > .header__menu-button {
-    //     transform: translateX(-36px);
-    // }
-    &__menu.open-menu > .header__menu-button::before {
-        transform: rotate(45deg);
-    }
-    &__menu.open-menu > .header__menu-button::after {
-        transform: rotate(-45deg);
-    }
-    .link-hidden {
-        display: none;
-
-        @include u.breakpoint-down(xsmall) {
-            display: block;
-        }
-    }
+  }
 }
