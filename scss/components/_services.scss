@@ -71,7 +71,8 @@
     width: 100%;
     min-height: 100%;
     padding: 28px;
-    background-color: var(--light-gray);
+    background: rgba(0, 0, 0, 0.03);
+    backdrop-filter: blur(10px);
     border-radius: 1.125rem;
 
     @include u.breakpoint-down(small) {

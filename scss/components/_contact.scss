@@ -63,9 +63,10 @@
     justify-content: center;
     // gap: 1rem;
     width: 40%;
-    color: var(--bg-secondary);
-    background-color: var(--white);
+    background: rgba(0, 0, 0, 0.03);
+    backdrop-filter: blur(10px);
     padding: 60px;
+    border: 1px solid rgba(255, 255, 255, .2);
     border-radius: 1.125rem;
 
     @include u.breakpoint-down(midlarge) {
@@ -114,7 +115,9 @@
   .form-control {
     width: 100%;
     font-size: u.rem(16);
-    background-color: var(--light-gray);
+    background: rgba(0, 0, 0, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, .2);
     padding: 0.725rem;
     border: 0;
     border-radius: 1rem;

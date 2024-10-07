@@ -43,7 +43,9 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: var(--bg-secondary);
+    background: rgba(255, 255, 255, .03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, .2);
     border-radius: 1.125rem;
     padding: 4rem;
     
@@ -69,11 +71,6 @@
   }
   &__button {
     width: fit-content;
-
-    &:hover {
-      color: var(--bg);
-      background-color: var(--white);
-    }
   }
   .call-to-action-design-element {
     position: absolute;
