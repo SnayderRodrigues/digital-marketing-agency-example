@@ -7,92 +7,51 @@
   height: 100svh;
   background-color: var(--bg);
   // border-bottom: 4px solid var(--bg-secondary);
-  text-align: center;
   position: relative;
 
   &__wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     position: relative;
     z-index: 2;
   }
-  &__headline-wrapper {
-    position: relative;
-    max-width: 850px;
-    margin-bottom: 2rem;
-  }
   &__headline {
-    text-transform: capitalize;
+    max-width: 16ch;
+    text-transform: uppercase;
     margin-bottom: 2rem;
-    margin-inline: auto;
   }
-  &__headline-description {
-    font-size: clamp(
-      1rem,
-      -0.9363636363636363rem + 5.454545454545454vh,
-      1.375rem
-    );
-    margin-inline: auto;
+  &__subtitle-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__arrow {
+    width: 12rem;
+  }
+  &__subtitle-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 
-    @include u.breakpoint-down(midlarge) {
+    p {
       font-size: clamp(
-        u.rem(16),
-        1.0224358974358974rem + 0.5128205128205128vw,
-        u.rem(22)
+        1rem,
+        -0.9363636363636363rem + 5.454545454545454vh,
+        1.375rem
       );
-    }
-  }
-  &__button-wrapper {
-    display: flex;
-    // flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
-    width: fit-content;
-    position: relative;
+      max-width: 32ch;
 
-    @include u.breakpoint-down(xsmall) {
-      flex-direction: column;
-      gap: 1rem;
-    }
-  }
-  &__learn-more-button-wrapper {
-    display: flex;
-    // flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: fit-content;
-    position: relative;
-
-    @include u.breakpoint-down(xsmall) {
-      width: 100% !important;
+      @include u.breakpoint-down(midlarge) {
+        font-size: clamp(
+          u.rem(16),
+          1.0224358974358974rem + 0.5128205128205128vw,
+          u.rem(22)
+        );
+      }
     }
   }
   &__button {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
-    background-color: transparent;
-    color: var(--white);
-    padding: 11px 21px;
-    border: 1px solid var(--white);
-
-    &:hover {
-      border: 1px solid transparent;
-    }
-
-    @include u.breakpoint-down(small) {
-      color: var(--bg-secondary);
-      background-color: var(--white);
-    }
-    @include u.breakpoint-down(xsmall) {
-      width: 100% !important;
-    }
-    @include u.breakpoint-up(large) {
-      padding: 13px 29px;
-    }
   }
   .hero-design-element-1 {
     position: absolute;

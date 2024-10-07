@@ -3,19 +3,12 @@
 h1,
 h2,
 h3 {
-  line-height: 1.4;
+  line-height: 1.2;
   text-transform: capitalize;
 }
 
 h1 {
-  font-size: clamp(
-    2.75rem,
-    -15.32272727272727rem + 50.90909090909091vh,
-    5.25rem
-  );
-  @include u.breakpoint-down(midlarge) {
-    font-size: clamp(2rem, 1.2rem + 4vw, 4rem);
-  }
+  font-size: clamp(2rem, 0.943661971830986rem + 4.507042253521126vw, 5rem);
 }
 
 h2 {
