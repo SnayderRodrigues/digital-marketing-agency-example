@@ -9,10 +9,18 @@
     z-index: 2;
     margin-top: 12rem;
     margin-bottom: 6rem;
+
+    @include u.breakpoint-down(small) {
+        margin-top: 8rem;
+    }
   }
   &__headline {
     max-width: 16ch;
     text-transform: uppercase;
+
+    @include u.breakpoint-down(small) {
+        margin-bottom: 2rem;
+    }
   }
   &__subtitle-wrapper {
     display: flex;
@@ -46,6 +54,10 @@
       top: 50%;
       right: 0%;
       transform: translate(0%, -50%) rotate(45deg);
+    }
+
+    @include u.breakpoint-down(small) {
+        display: none;
     }
   }
   &__subtitle-group {

@@ -16,15 +16,13 @@
     justify-content: center;
     position: relative;
     z-index: 2;
-    
+
     @include u.breakpoint-down(medium) {
       grid-template-columns: repeat(2, 1fr);
     }
     @include u.breakpoint-down(small) {
       grid-template-columns: repeat(1, 1fr);
     }
-
-
   }
   &__image {
     width: 100%;
@@ -43,12 +41,12 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background: rgba(255, 255, 255, .03);
+    background: rgba(255, 255, 255, 0.03);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, .2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 1.125rem;
     padding: 4rem;
-    
+
     @include u.breakpoint-down(midlarge) {
       padding: 2.5rem;
     }
@@ -63,10 +61,13 @@
     }
   }
   &__headline {
-    margin-bottom: u.rem(16);
+    margin-bottom: u.rem(48);
 
-    @include u.breakpoint-up(large) {
-      margin-bottom: u.rem(48);
+    @include u.breakpoint-down(large) {
+      margin-bottom: u.rem(32);
+    }
+    @include u.breakpoint-down(small) {
+      margin-bottom: u.rem(16);
     }
   }
   &__button {
