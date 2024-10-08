@@ -76,7 +76,7 @@
     max-height: 500px;
     object-fit: cover;
     object-position: center bottom;
-    border-radius: 1.125rem;
+    border-radius: 1.25rem;
 
     @include u.breakpoint-down(midlarge) {
       width: 100%;
