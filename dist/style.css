@@ -222,6 +222,7 @@ h1 {
 
 h2 {
   font-size: clamp(2rem, 1.224137931rem + 3.3103448276vw, 3.5rem);
+  text-transform: uppercase;
 }
 
 h3 {
@@ -438,6 +439,7 @@ h3 {
 @media (max-width: 47.99875em) {
   .hero__wrapper {
     margin-top: 8rem;
+    margin-bottom: 4rem;
   }
 }
 .hero__headline {
@@ -514,6 +516,16 @@ h3 {
   position: relative;
   z-index: 2;
   margin-bottom: 6rem;
+}
+@media (max-width: 56.24875em) {
+  .hero__cards-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 47.99875em) {
+  .hero__cards-wrapper {
+    gap: 1rem;
+  }
 }
 .hero__card {
   display: flex;
