@@ -21,8 +21,8 @@
       -2.3318181818181816rem + 7.2727272727272725vh,
       0.75rem
     );
-    background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.6);
+    // backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
     @include u.breakpoint-down(small) {
