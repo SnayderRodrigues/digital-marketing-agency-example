@@ -14,11 +14,7 @@
     flex-direction: column;
   }
   &__h2 {
-    margin-bottom: 100px;
-
-    @include u.breakpoint-down(small) {
-      margin-bottom: 40px;
-    }
+    margin-bottom: 4rem;
   }
   &__content {
     width: 100%;

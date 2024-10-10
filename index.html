@@ -754,10 +754,10 @@
       <section class="contact" id="contact">
         <div class="wrapper contact__wrapper">
           <div class="contact__description">
-            <h2 class="contact__description-h2">
-              Ready to boost 🚀 your brand's visibility?
-            </h2>
-            <div class="contact__description-div">
+            <div class="contact__description-items">
+              <h2 class="contact__description-h2">
+                Ready to boost your brand's <span class="text-gradient">visibility</span>?
+              </h2>
               <p class="contact__p">
                 ✅ Conduct a thorough analysis of your business operations and
                 strategic goals.
@@ -770,19 +770,19 @@
                 ✅ Define clear expectations, deliverables, and budget
                 parameters.
               </p>
+              <p class="contact__p">
+                Our team provides unparalleled support and expertise. Reach out to
+                us, and we'll proactively guide you through every step on the path
+                to success.
+              </p>
             </div>
-            <p class="contact__p">
-              Our team provides unparalleled support and expertise. Reach out to
-              us, and we'll proactively guide you through every step on the path
-              to success.
-            </p>
           </div>
           <div class="contact__form">
-            <h2 class="contact__form-h2">Let's Get Started.</h2>
+            <h2 class="contact__form-h2">Let's Get Started</h2>
             <span class="contact__form-items" data-name="name-1">
-              <span class="contact__form-items-title">Name*</span>
+              <span class="contact__form-items-title">Name<span class="highlight">*</span></span>
               <input
-                class="form-control"
+                class="form-input"
                 aria-required="true"
                 aria-invalid="false"
                 placeholder="Enter your name"
@@ -792,9 +792,9 @@
               />
             </span>
             <span class="contact__form-items" data-name="email">
-              <span class="contact__form-items-title">Email*</span>
+              <span class="contact__form-items-title">Email<span class="highlight">*</span></span>
               <input
-                class="form-control"
+                class="form-input"
                 aria-required="true"
                 aria-invalid="false"
                 placeholder="Enter your email address"
@@ -803,25 +803,12 @@
                 name="email"
               />
             </span>
-            <span class="contact__form-items" data-name="website">
-              <span class="contact__form-items-title"
-                >Website URL (Optional)</span
-              >
-              <input
-                class="form-control"
-                aria-invalid="false"
-                placeholder="Enter your website URL"
-                value=""
-                type="url"
-                name="website"
-              />
-            </span>
             <span class="contact__form-items" data-name="message">
               <span class="contact__form-items-title"
                 >Your Message (Optional)</span
               >
               <textarea
-                class="form-control message"
+                class="form-input form-message"
                 placeholder="Enter your message here"
                 name="message"
               ></textarea>
@@ -834,7 +821,6 @@
                 >Submit</a
               >
             </div>
-            <!-- <span class="contact__form-submit-text">By clicking next, you agree to receive communications from Example in accordance with our Privacy Policy.</span> -->
           </div>
         </div>
       </section>

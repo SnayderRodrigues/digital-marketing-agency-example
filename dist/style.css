@@ -1064,12 +1064,7 @@ h3 {
   flex-direction: column;
 }
 .faq__h2 {
-  margin-bottom: 100px;
-}
-@media (max-width: 47.99875em) {
-  .faq__h2 {
-    margin-bottom: 40px;
-  }
+  margin-bottom: 4rem;
 }
 .faq__content {
   width: 100%;
@@ -1229,9 +1224,7 @@ h3 {
 }
 
 .contact {
-  background-color: var(--bg-secondary);
   padding: 120px 0;
-  border-radius: 2rem;
   margin-top: -120px;
   position: relative;
   z-index: 3;
@@ -1240,11 +1233,16 @@ h3 {
   .contact {
     padding: 80px 0;
     margin-top: -80px;
-    border-radius: 1.5rem;
   }
 }
 .contact__wrapper {
   display: flex;
+  gap: 4rem;
+}
+@media (max-width: 63.99875em) {
+  .contact__wrapper {
+    flex-direction: column;
+  }
 }
 @media (max-width: 47.99875em) {
   .contact__wrapper {
@@ -1252,20 +1250,11 @@ h3 {
     gap: 2rem;
   }
 }
-@media (max-width: 63.99875em) {
-  .contact__wrapper {
-    flex-direction: column;
-    gap: 4rem;
-  }
-}
 .contact__description {
   width: 60%;
-  background-color: var(--bg-secondary);
-  color: var(--white);
-  padding: 0px 60px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
 }
 @media (max-width: 47.99875em) {
   .contact__description {
@@ -1281,22 +1270,26 @@ h3 {
     padding: 0px;
   }
 }
-.contact__description-h2 {
+.contact__description-items {
   margin-bottom: 2rem;
 }
-.contact__description-div {
-  margin-bottom: 2rem;
+.contact__description-h2 {
+  margin-bottom: 4rem;
 }
 .contact__p {
   margin-bottom: 1rem;
+}
+.contact__p:last-of-type {
+  margin-top: 4rem;
+  margin-bottom: 0;
 }
 .contact__form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 40%;
-  background: rgba(0, 0, 0, 0.03);
-  padding: 60px;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 3rem;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 1.125rem;
 }
@@ -1343,19 +1336,22 @@ h3 {
   text-align: center;
   padding: 12px 30px 12px;
 }
-.contact .form-control {
+.contact .form-input {
   width: 100%;
   font-size: 1rem;
-  background: rgba(0, 0, 0, 0.03);
+  background: rgba(255, 255, 255, 0.03);
+  padding: 0.875rem;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 0.725rem;
-  border: 0;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   margin-bottom: 1rem;
   transition: border 200ms linear;
 }
-.contact .message {
+.contact .form-input:active, .contact .form-input:focus {
+  border: 1px solid var(--green);
+}
+.contact .form-message {
   resize: vertical;
+  margin-bottom: 2rem;
 }
 
 .footer {

@@ -1,9 +1,7 @@
 @use "../util/" as u;
 
 .contact {
-  background-color: var(--bg-secondary);
   padding: 120px 0;
-  border-radius: 2rem;
   margin-top: -120px;
   position: relative;
   z-index: 3;
@@ -11,31 +9,26 @@
   @include u.breakpoint-down(xsmall) {
     padding: 80px 0;
     margin-top: -80px;
-    border-radius: 1.5rem;
   }
 
   &__wrapper {
     display: flex;
-    // border: 4px solid red;
+    // align-items: flex-start;
+    gap: 4rem;
+
+    @include u.breakpoint-down(midlarge) {
+      flex-direction: column;
+    }
     @include u.breakpoint-down(small) {
       flex-direction: column;
       gap: 2rem;
     }
-    @include u.breakpoint-down(midlarge) {
-      flex-direction: column;
-      gap: 4rem;
-    }
   }
   &__description {
     width: 60%;
-    background-color: var(--bg-secondary);
-    color: var(--white);
-    padding: 0px 60px;
-
     display: flex;
     flex-direction: column;
-    // align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 
     @include u.breakpoint-down(small) {
       width: 100%;
@@ -48,25 +41,28 @@
       padding: 0px;
     }
   }
-  &__description-h2 {
+  &__description-items {
     margin-bottom: 2rem;
   }
-  &__description-div {
-    margin-bottom: 2rem;
+  &__description-h2 {
+    margin-bottom: 4rem;
   }
   &__p {
     margin-bottom: 1rem;
+  }
+  &__p:last-of-type {
+    margin-top: 4rem;
+    margin-bottom: 0;
   }
   &__form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    // gap: 1rem;
     width: 40%;
-    background: rgba(0, 0, 0, 0.03);
+    background: rgba(255, 255, 255, 0.03);
     // backdrop-filter: blur(10px);
-    padding: 60px;
-    border: 1px solid rgba(255, 255, 255, .2);
+    padding: 3rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 1.125rem;
 
     @include u.breakpoint-down(midlarge) {
@@ -108,23 +104,23 @@
     text-align: center;
     padding: 12px 30px 12px;
   }
-  // &__form-submit-text {
-  //     font-size: u.rem(16);
-  //     line-height: 1.3;
-  // }
-  .form-control {
+  .form-input {
     width: 100%;
-    font-size: u.rem(16);
-    background: rgba(0, 0, 0, 0.03);
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.03);
     // backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, .2);
-    padding: 0.725rem;
-    border: 0;
-    border-radius: 1rem;
+    padding: 0.875rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.5rem;
     margin-bottom: 1rem;
     transition: border 200ms linear;
+    
+    &:active, &:focus {
+      border: 1px solid var(--green);
+    }
   }
-  .message {
+  .form-message {
     resize: vertical;
+    margin-bottom: 2rem;
   }
 }
