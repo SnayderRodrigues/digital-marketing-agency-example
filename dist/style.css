@@ -557,6 +557,14 @@ h3 {
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 1rem;
 }
+@media (max-width: 29.99875em) {
+  .hero__card svg {
+    width: 5rem;
+  }
+}
+.hero__card path {
+  fill: white;
+}
 .hero .hero-design-element-1 {
   position: absolute;
   top: 60%;
