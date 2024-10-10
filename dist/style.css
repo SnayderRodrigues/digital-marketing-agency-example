@@ -1358,11 +1358,13 @@ h3 {
   background-color: var(--bg);
   position: relative;
   overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 .footer__wrapper {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
+  gap: 2rem;
   padding: 80px 0;
   position: relative;
   z-index: 1;
@@ -1378,11 +1380,6 @@ h3 {
   display: flex;
   flex-direction: column;
   gap: 40px;
-}
-@media (max-width: 47.99875em) {
-  .footer__logo-wrapper {
-    align-items: center;
-  }
 }
 .footer__logo {
   color: var(--white);
@@ -1402,8 +1399,8 @@ h3 {
   fill: var(--green);
 }
 .footer__icon {
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
 }
 .footer__icon path {
   transition: fill 200ms ease-in-out;
@@ -1420,18 +1417,19 @@ h3 {
 @media (max-width: 47.99875em) {
   .footer__nav-div {
     width: 100%;
-    justify-content: space-evenly;
-    gap: 16px;
+    justify-content: space-between;
+    gap: 3rem;
     order: -1;
   }
 }
 @media (max-width: 29.99875em) {
   .footer__nav-div {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
 }
 .footer__navigation {
+  flex: 1;
   display: flex;
   flex-direction: column;
 }
@@ -1440,15 +1438,28 @@ h3 {
   font-size: 1.5rem;
 }
 .footer__navigation a {
+  width: -moz-fit-content;
+  width: fit-content;
   color: var(--white);
   transition: color 200ms linear;
+}
+@media (max-width: 47.99875em) {
+  .footer__navigation a {
+    font-size: 1.125rem;
+    margin-bottom: 0.25rem;
+  }
 }
 .footer__navigation a:hover {
   color: var(--green);
 }
-@media (max-width: 29.99875em) {
-  .footer__navigation {
-    align-items: center;
+.footer__navigation p {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media (max-width: 47.99875em) {
+  .footer__navigation p {
+    font-size: 1.125rem;
+    margin-bottom: 0.25rem;
   }
 }
 .footer .footer-design-element {
@@ -1472,6 +1483,7 @@ h3 {
 }
 @media (max-width: 29.99875em) {
   .footer .footer-design-element {
-    left: calc(50% - 180px);
+    top: 30%;
+    left: calc(100% - 180px);
   }
 }/*# sourceMappingURL=style.css.map */
