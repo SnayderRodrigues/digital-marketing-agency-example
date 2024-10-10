@@ -25,18 +25,16 @@
   }
   &__cards-wrapper {
     width: 100%;
-    height: fit-content;
-    display: flex;
-    // align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
     gap: 2rem;
 
-    @include u.breakpoint-down(small) {
-      flex-direction: column;
-    }
     @include u.breakpoint-down(midlarge) {
-      flex-direction: column;
-      gap: 2rem;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include u.breakpoint-down(small) {
+      grid-template-columns: repeat(1, 1fr);
     }
   }
   &__card {
@@ -45,9 +43,9 @@
     width: 100%;
     min-width: 280px;
     min-height: 100%;
-    background: rgba(255, 255, 255, .03);
+    background: rgba(255, 255, 255, 0.03);
     // backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, .2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 36px;
     border-radius: 1.25rem;
 
@@ -63,6 +61,13 @@
     }
     @include u.breakpoint-down(xsmall) {
       padding: 24px;
+    }
+  }
+  &__card:nth-of-type(4),
+  &__card:nth-of-type(5),
+  &__card:nth-of-type(6) {
+    @include u.breakpoint-down(small) {
+      display: none;
     }
   }
   &__card-stars {
