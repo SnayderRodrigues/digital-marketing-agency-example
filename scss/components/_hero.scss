@@ -1,7 +1,6 @@
 @use "../util/" as u;
 
 .hero {
-  background-color: var(--bg);
   position: relative;
 
   &__wrapper {
