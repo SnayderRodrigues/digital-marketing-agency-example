@@ -87,7 +87,7 @@
   }
   &__list-div.open-menu {
     opacity: 1;
-    user-select: all;
+    user-select: auto;
     pointer-events: all;
   }
   &__list {

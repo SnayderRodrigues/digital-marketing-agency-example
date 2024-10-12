@@ -50,6 +50,7 @@
     border-radius: 1rem;
 
     @include u.breakpoint-down(small) {
+      text-align: center;
       align-items: center;
       justify-content: center;
     }

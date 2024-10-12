@@ -46,7 +46,19 @@
     margin-bottom: 4rem;
   }
   &__p {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
     margin-bottom: 1rem;
+
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--green);
+      padding: 0.125rem;
+      border-radius: 0.125rem;
+    }
   }
   &__p:last-of-type {
     margin-top: 4rem;
