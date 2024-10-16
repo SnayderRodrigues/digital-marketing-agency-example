@@ -1,7 +1,7 @@
 @use "../util/" as u;
 
 .call-to-action {
-  padding: 0 0 6rem 0;
+  padding: 6rem 0;
   position: relative;
 
   @include u.breakpoint-down(xsmall) {
@@ -74,7 +74,7 @@
   }
   .call-to-action-design-element {
     position: absolute;
-    bottom: -20%;
+    bottom: 0%;
     right: -20%;
   }
 }
