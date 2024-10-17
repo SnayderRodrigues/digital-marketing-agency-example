@@ -205,9 +205,9 @@ textarea:focus-visible {
 }
 @media (max-width: 29.99875em) {
   .design-element {
-    width: 360px;
-    height: 360px;
-    filter: blur(180px);
+    width: 300px;
+    height: 300px;
+    filter: blur(140px);
   }
 }
 
@@ -1148,6 +1148,8 @@ h3 {
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 1.25rem;
   padding: 4rem;
+  position: relative;
+  overflow: hidden;
 }
 @media (max-width: 63.99875em) {
   .call-to-action__content {
@@ -1187,9 +1189,20 @@ h3 {
   width: fit-content;
 }
 .call-to-action .call-to-action-design-element {
+  max-width: 300px;
+  max-height: 300px;
+  filter: blur(100px);
   position: absolute;
-  bottom: 0%;
-  right: -20%;
+  top: 50%;
+  right: 0%;
+  transform: translate(50%, -50%);
+  z-index: -1;
+}
+@media (max-width: 47.99875em) {
+  .call-to-action .call-to-action-design-element {
+    max-width: 200px;
+    max-height: 200px;
+  }
 }
 
 .faq {
