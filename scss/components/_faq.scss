@@ -6,7 +6,7 @@
   z-index: 2;
 
   @include u.breakpoint-down(xsmall) {
-    padding: 4rem 0;
+    padding: 4rem 0 0;
   }
 
   &__wrapper {

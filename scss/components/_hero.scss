@@ -101,6 +101,7 @@
     }
     @include u.breakpoint-down(small) {
       gap: 1rem;
+      margin-bottom: 0;
     }
   }
   &__card {

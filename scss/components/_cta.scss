@@ -5,7 +5,7 @@
   position: relative;
 
   @include u.breakpoint-down(xsmall) {
-    padding: 0 0 4rem 0;
+    padding: 4rem 0 0;
   }
 
   &__wrapper {
@@ -83,7 +83,7 @@
     right: 0%;
     transform: translate(50%, -50%);
     z-index: -1;
-    
+
     @include u.breakpoint-down(small) {
       max-width: 200px;
       max-height: 200px;

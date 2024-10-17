@@ -544,6 +544,7 @@ h3 {
 @media (max-width: 47.99875em) {
   .hero__cards-wrapper {
     gap: 1rem;
+    margin-bottom: 0;
   }
 }
 .hero__card {
@@ -606,7 +607,7 @@ h3 {
 }
 @media (max-width: 29.99875em) {
   .about {
-    padding: 4rem 0;
+    padding: 4rem 0 0;
   }
 }
 .about__wrapper {
@@ -696,7 +697,7 @@ h3 {
 }
 @media (max-width: 29.99875em) {
   .features {
-    padding: 4rem 0;
+    padding: 4rem 0 0;
   }
 }
 .features__h2-wrapper {
@@ -764,7 +765,7 @@ h3 {
 }
 @media (max-width: 29.99875em) {
   .services {
-    padding: 4rem 0;
+    padding: 4rem 0 0;
   }
 }
 .services__wrapper {
@@ -814,6 +815,7 @@ h3 {
     text-align: center;
     align-items: center;
     justify-content: center;
+    padding: 1rem;
   }
 }
 .services .card-element span {
@@ -823,6 +825,7 @@ h3 {
 }
 @media (max-width: 47.99875em) {
   .services .card-element span {
+    font-size: 1rem;
     margin-bottom: 0;
   }
 }
@@ -858,7 +861,7 @@ h3 {
 }
 @media (max-width: 29.99875em) {
   .reviews {
-    padding: 4rem 0;
+    padding: 4rem 0 0;
   }
 }
 .reviews__wrapper {
@@ -957,7 +960,7 @@ h3 {
 }
 @media (max-width: 29.99875em) {
   .pricing {
-    padding: 4rem 0;
+    padding: 4rem 0 0;
   }
 }
 .pricing__wrapper {
@@ -1104,7 +1107,7 @@ h3 {
 }
 @media (max-width: 29.99875em) {
   .call-to-action {
-    padding: 0 0 4rem 0;
+    padding: 4rem 0 0;
   }
 }
 .call-to-action__wrapper {
@@ -1212,7 +1215,7 @@ h3 {
 }
 @media (max-width: 29.99875em) {
   .faq {
-    padding: 4rem 0;
+    padding: 4rem 0 0;
   }
 }
 .faq__wrapper {
@@ -1537,7 +1540,7 @@ h3 {
   .footer__wrapper {
     flex-direction: column;
     gap: 40px;
-    padding: 4rem 0;
+    padding: 4rem 0 2rem;
   }
 }
 .footer__logo-wrapper {

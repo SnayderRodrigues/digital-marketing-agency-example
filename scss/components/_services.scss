@@ -7,7 +7,7 @@
   z-index: 2;
 
   @include u.breakpoint-down(xsmall) {
-    padding: 4rem 0;
+    padding: 4rem 0 0;
   }
 
   &__wrapper {
@@ -53,14 +53,16 @@
       text-align: center;
       align-items: center;
       justify-content: center;
+      padding: 1rem;
     }
 
     span {
       font-size: 1.25rem;
       font-weight: 600;
       margin-bottom: 20px;
-
+      
       @include u.breakpoint-down(small) {
+        font-size: 1rem;
         margin-bottom: 0;
       }
     }
