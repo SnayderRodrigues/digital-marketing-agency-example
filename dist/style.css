@@ -229,6 +229,7 @@ textarea:focus-visible {
   --light-gray: #f0f0f0;
   --bg: #000000;
   --bg-secondary: #2c2c2c;
+  scroll-padding: 2rem;
 }
 
 h1,
