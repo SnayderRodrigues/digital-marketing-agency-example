@@ -791,6 +791,7 @@ h3 {
 @media (max-width: 47.99875em) {
   .work__cards-wrapper {
     grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: auto;
   }
 }
 .work__card {
