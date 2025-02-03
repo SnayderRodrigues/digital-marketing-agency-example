@@ -85,6 +85,13 @@ window.addEventListener("resize", function () {
 let lastScrollTop = 0;
 
 window.addEventListener("scroll", function () {
+  const scrollIndicator = document.querySelector(".scroll-indicator");
+  const scrollHeight =
+    document.documentElement.scrollHeight - window.innerHeight;
+  const scrollProgress = (window.scrollY / scrollHeight) * 100;
+
+  scrollIndicator.style.transform = `scaleX(${scrollProgress / 100})`;
+
   const header = document.querySelector(".header");
   const currentScroll = window.scrollY;
 

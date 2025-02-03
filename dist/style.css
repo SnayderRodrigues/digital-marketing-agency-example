@@ -229,6 +229,7 @@ textarea:focus-visible {
   --light-gray: #f0f0f0;
   --bg: #000000;
   --bg-secondary: #2c2c2c;
+  color-scheme: dark;
   scroll-padding: 2rem;
 }
 
@@ -303,6 +304,16 @@ h3 {
   .header {
     padding-block: 12px 12px;
   }
+}
+.header .scroll-indicator {
+  height: 2px;
+  position: fixed;
+  top: 0;
+  inset: 0;
+  z-index: 50;
+  background-color: var(--green);
+  transform-origin: left;
+  transform: scaleX(0);
 }
 .header__wrapper {
   display: flex;
