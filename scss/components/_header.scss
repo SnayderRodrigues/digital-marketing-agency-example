@@ -43,7 +43,7 @@
     top: 0;
     inset: 0;
     z-index: 50;
-    background-color: var(--green);
+    background: linear-gradient(to right, #57bd6f, #6cc065, #8ac966, #88d42c);
     transform-origin: left;
     transform: scaleX(0);
   }
@@ -58,12 +58,6 @@
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: -2px;
-    transition: color 200ms ease-in-out;
-
-
-    &:hover {
-        color: var(--green);
-    }
   }
   &__navbar {
     display: flex;
