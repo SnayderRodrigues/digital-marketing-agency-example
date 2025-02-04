@@ -1581,7 +1581,7 @@ h3 {
 }
 @media (max-width: 29.99875em) {
   .contact__form {
-    padding: 32px 24px;
+    padding: 18px;
   }
 }
 .contact__form-items {
@@ -1637,7 +1637,7 @@ h3 {
   align-items: flex-start;
   justify-content: space-between;
   gap: 2rem;
-  padding: 6rem 0;
+  padding: 6rem 0 3rem;
   position: relative;
   z-index: 1;
 }
@@ -1662,7 +1662,7 @@ h3 {
 }
 .footer__links {
   display: flex;
-  gap: 28px;
+  gap: 24px;
 }
 .footer__link path {
   fill: var(--white);
